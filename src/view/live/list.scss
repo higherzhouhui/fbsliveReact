@@ -1,0 +1,294 @@
+.live-container {
+    padding-top: 80px;
+    min-width: 1200px;
+    min-height: 100vh;
+    height: 100%;
+    background: #f6f6f6;
+}
+
+.live-list-box {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+    padding: 60px 0;
+
+    .tab-box {
+        display: flex;
+        align-items: center;
+
+        .live-name {
+            font-size: 30px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 32px;
+            margin-right: 40px;
+        }
+
+        .tab-btn {
+            margin-right: 15px;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.88);
+            height: 32px;
+            display: flex;
+            align-items: center;
+            align-items: center;
+            background: #FFFFFF;
+            border-radius: 5px;
+            border: 1px solid #E5E5E5;
+            cursor: pointer;
+            min-width: 60px;
+            padding: 0 12px;
+            display: flex;
+            justify-content: center;
+
+            &:hover,
+            &.active {
+                background: linear-gradient(180deg, #FCB7C9 0%, #FC708B 100%);
+                color: #fff;
+            }
+        }
+    }
+}
+
+.live-group {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+
+    .live-item {
+        position: relative;
+        border-radius: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        cursor: pointer;
+        overflow: hidden;
+
+        .pk {
+            position: absolute;
+            width: 30px;
+            display: inline-block;
+            object-fit: fill;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+
+            &.two {
+                right: 37px;
+            }
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 38%;
+            transform: translate(-50%, -50%);
+            width: 0px;
+            height: 0px;
+            background: url('../../assets/images/live/live-icon.png');
+            background-size: 100% 100%;
+            transition: .3s all;
+        }
+
+        &:hover {
+            .logo-img {
+                transition: .3s all;
+                transform: scale(1.1);
+            }
+
+            &::after {
+                width: 64px;
+                height: 64px;
+            }
+        }
+
+        .label {
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #fff;
+            z-index: 1;
+            white-space: nowrap;
+            display: flex;
+            background: linear-gradient(100deg, #0142B4 50%, #848AFF 100%);
+            border-radius: 10px 1px 10px 1px;
+
+            img {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin-right: 4px;
+            }
+
+            &-index {
+                border-right: 1px solid #fff;
+
+                &:last-child {
+                    border-right: unset;
+                }
+            }
+
+            &-0 {
+                padding: 0 15px 0 12px;
+                height: 34px;
+                line-height: 34px;
+                background: linear-gradient(127deg, #1CFFF1 0%, #121EFB 100%);
+                border-radius: 10px 1px 10px 1px;
+            }
+
+            &-1 {
+                padding: 0 15px 0 12px;
+                height: 34px;
+                line-height: 34px;
+
+            }
+        }
+
+        .logo {
+            position: relative;
+            overflow: hidden;
+            height: 228px;
+
+            .logo-img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .liveLabel {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 28px;
+                background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                z-index: 1;
+                padding: 7px 0 7px 10px;
+
+                .phbImg {
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    z-index: 2;
+                }
+
+                span {
+                    margin-left: 8px;
+                    font-size: 12px;
+                    color: #fff;
+                }
+            }
+        }
+
+        .bottom-info {
+            height: 60px;
+            width: 100%;
+            background: #fff;
+            padding: 10px 10px;
+            text-align: left;
+            box-sizing: border-box;
+
+            .bottom-info-t {
+                margin-bottom: 8px;
+                display: flex;
+                justify-content: space-between;
+
+                .nickname {
+                    font-size: 16px;
+                    font-family: PingFangSC-Medium, PingFang SC;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.85);
+                    line-height: 16px;
+
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    -o-text-overflow: ellipsis;
+
+                }
+
+                .right {
+                    img {
+                        height: 16px;
+                    }
+
+                    .num {
+                        margin-left: 4px;
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: rgba(0, 0, 0, 0.45);
+                        line-height: 12px;
+                    }
+                }
+            }
+
+            .bottom-info-b {
+                font-size: 12px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.45);
+                line-height: 12px;
+                overflow: hidden; //超出的文本隐藏
+                max-width: 208px;
+                text-overflow: ellipsis; //溢出用省略号显示
+                white-space: nowrap; // 默认不换行；
+                width: 100%;
+            }
+        }
+
+        .game-icon {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            z-index: 1;
+
+            img {
+                width: 28px;
+                height: 28px;
+                display: inline-block;
+                margin-right: 8px;
+            }
+        }
+
+        .activity-icon {
+            position: absolute;
+            left: 10px;
+            bottom: 70px;
+            z-index: 1;
+
+            img {
+                width: 28px;
+                height: 28px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    &.black {
+        .live-item {
+            .bottom-info {
+                background: #0d0f1c;
+                color: #fff;
+                .nickname,.bottom-info-b {
+                    color: rgba(255, 255, 255, 0.85);
+                }
+                .right{
+                    .num{
+                        color: rgba(255, 255, 255, 0.85);
+                    }
+                }
+            }
+        }
+    }
+}

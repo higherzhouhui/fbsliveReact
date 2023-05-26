@@ -1,0 +1,90 @@
+$main: #FC708B;
+
+.feiting {
+    flex: 1;
+    overflow-y: scroll;
+    padding: 12px;
+    position: relative;
+    height: 250px;
+
+    .title {
+        font-size: 14px;
+        color: #fff;
+        text-align: left;
+    }
+
+    .wrap {
+        .list {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 6px;
+            padding: 10px 0;
+
+            .box {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                cursor: pointer;
+
+                .span {
+                    background: #fbfbfb;
+                    border: 1px solid #e8e8e8;
+                    height: 26px;
+                    line-height: 26px;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #999;
+                    border-radius: 5px;
+                }
+
+                p {
+                    line-height: 24px;
+                    font-size: 12px;
+                    color: #fff;
+                    text-align: center;
+                }
+
+                &.active {
+                    .span {
+                        border: 1px solid $main;
+                        background: $main;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        [data-layout="4"].list {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+.btiTitle {
+    text-align: left;
+}
+
+.btiPer {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    gap: 10px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+
+    &.outSetBtiPer {
+        margin: 10px 0 0;
+    }
+
+    .box {
+        border-radius: 8px;
+        background: #646464;
+        border-radius: 1000px;
+        cursor: pointer;
+    }
+
+    .active {
+        background: #fff;
+        color: $main;
+    }
+}

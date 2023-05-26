@@ -1,0 +1,63 @@
+.downWindow {
+    background: transparent;
+    color: #333;
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: -56px;
+    }
+
+    .content {
+        background: #fff;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 72px 14px 40px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+        line-height: 48px;
+        height: 48px;
+        background: #ff839b;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    .noMoreWindow {
+        margin: 20px auto 0;
+        color: #666;
+        font-size: 14px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .close {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 20px;
+        top: 50px;
+        object-fit: contain;
+    }
+}
+
+.disFlexs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkbox {
+    margin-top: 20px;
+}

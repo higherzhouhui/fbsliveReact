@@ -1,0 +1,199 @@
+@import "../../../../assets/style/index.scss";
+
+.deposit_title {
+  padding: 0 7px;
+  .qbs {
+    position: relative;
+  }
+  .bg {
+    background: url("../../../../assets/image/newImg/tx/txtitle.png") no-repeat;
+    background-size: 100% 100%;
+    height: 127px;
+
+    padding: 0 7px;
+    position: relative;
+    z-index: 10;
+
+    .bg_moneys {
+      width: 100%;
+      height: 100%;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 10;
+
+      .moneys_xu {
+        width: 100%;
+        text-align: left;
+
+        margin-bottom: 14px;
+
+        font-size: 15px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #ffffff;
+        opacity: 0.8;
+      }
+      .money_div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .spans {
+          font-size: 24px;
+          font-family: PingFang SC;
+          font-weight: 600;
+          color: #ffffff;
+        }
+        .retrieves {
+          padding: 0;
+
+          width: 92px;
+          height: 24px;
+          background: rgba(255, 255, 255, 0.3);
+          border-radius: 12px;
+
+          border: none;
+
+          .retrieves_div {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .imgs {
+              width: 13px;
+              height: 13px;
+
+              margin-right: 8px;
+            }
+            .fonts {
+              font-size: 12px !important;
+              font-family: PingFang SC;
+              font-weight: 400;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contents {
+    width: calc(100% - 14px);
+    padding: 40px 16px 16px;
+
+    // position: relative;
+    // top: 90px;
+    // top: -30px;
+    // left: 7px;
+    // z-index: 5;
+    margin-top: -35px;
+    margin-left: 7px;
+
+    min-height: 50px;
+    background: #f6f7fc;
+    border-radius: 15px;
+
+    .contents_title {
+      display: flex;
+      align-items: center;
+
+      font-size: 12px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: #666666;
+    }
+    .contents_title_bot {
+      padding-bottom: 11px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .marginTop23 {
+      margin-top: 23px;
+    }
+    .game_div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .bigs {
+        .tops {
+          font-size: 12px;
+          font-family: PingFang SC;
+          font-weight: 300;
+          color: #666666;
+          margin-bottom: 13px;
+        }
+        .bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          span {
+            font-size: 15px;
+            font-family: PingFang SC;
+            font-weight: 600;
+            color: #999999;
+          }
+        }
+        .trans {
+          width: 14px;
+          height: 14px;
+          border-radius: 100%;
+          border: 0;
+          padding: 0;
+          display: flex;
+          align-items: center;
+
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          img {
+            width: 14px;
+            height: 14px;
+          }
+          .sxz {
+            animation: trans 1s infinite;
+          }
+          @keyframes trans {
+            from {
+              transform: rotate(0);
+            }
+
+            to {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+      .margin_bot {
+        margin-bottom: 30px;
+      }
+      .left {
+        padding-left: 10px;
+        padding-right: 20px;
+      }
+      .right {
+        padding-left: 20px;
+        padding-right: 10px;
+
+        position: relative;
+        .borderLeft {
+          position: absolute;
+          top: 50%;
+          left: 0px;
+
+          transform: translate(0, -50%);
+          height: 20px;
+          width: 1px;
+
+          background: #e8e8e8;
+        }
+      }
+    }
+  }
+}

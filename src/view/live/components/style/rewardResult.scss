@@ -1,0 +1,211 @@
+// .status-img{
+//     background-repeat: no-repeat;
+//     background-size: 45px 45px;
+//     background-position: center right;
+//     padding: 12px 8px;
+// }
+// .fb-reward-result-box-out{
+//     position: absolute;
+//     top: 100px;
+//     .no-data{
+//         line-height: 620px;
+//         color: rgb(255, 255, 255);
+//         text-align: center;
+//         width: 410px;
+//         position: relative;
+//     }
+//     .bet-amount{
+//         padding: 0 10px;
+//         height: 30px;
+//         line-height: 30px;
+//         background-color: rgba(0, 0, 0, .1);
+//         color: rgba(255, 255, 255, .5);
+//     }
+// }
+// .fb-reward-result-box-right {
+//     position: relative;
+//     overflow: hidden;
+   
+//     &-alert {
+//         top: 100px;
+//         z-index: 100;
+//         width: 430px;
+//         border-radius: 8px;
+
+//         .tab-box {
+//             position: absolute;
+//             display: flex;
+//             height: 30px;
+//             align-items: center;
+//             // line-height: 30px;
+//             border-radius: 5px;
+//             background-color: rgba(0, 0, 0, .2);
+//             top: 14px;
+//             left: 50%;
+//             transform: translateX(-50%);
+//             .tab {
+//                 border-radius: 5px;
+//                 padding: 0 23px;
+//                 text-align: center;
+//                 color: #fff;
+//                 height: 100%;
+//                 display: flex;
+//                 align-items: center;
+//                 cursor: pointer;
+//                 &.active {
+//                     font-size: 14px;
+//                     background: linear-gradient(180deg, #FCB7C9 0%, #FC708B 100%);;
+//                 }
+//             }
+//         }
+
+//         .ant-collapse-expand-icon {
+//             color: #fff;
+//             position: absolute;
+//             right: 2px;
+//             bottom: 35px;
+//             font-size: 12px;
+
+//             svg {
+//                 height: 8px;
+//             }
+//         }
+
+//         .ant-collapse-content {
+
+//             color: rgba(255, 255, 255, 0.5000);
+//             background-color: unset;
+//             border-top: unset;
+//             text-align: left;
+//         }
+
+//         .ant-collapse {
+//             background-color: unset;
+//             border: unset;
+
+//             .ant-collapse-item {
+//                 border-bottom: unset;
+
+//                 .ant-collapse-header {
+//                     display: block;
+//                 }
+//             }
+//         }
+
+//         .amount-value {
+//             font-weight: 600;
+//             color: rgba(248, 133, 133, 1);
+//             font-size: 14px;
+//         }
+
+//         .close {
+//             position: absolute;
+//             right: 10px;
+//             top: 11px;
+//             cursor: pointer;
+//         }
+
+//         .back-icon {
+//             position: absolute;
+//             left: 11px;
+//             cursor: pointer;
+//         }
+
+//         padding: 14px 10px;
+//         position: absolute;
+//         background-color: rgba(51, 51, 51, .9);
+//         left: 0;
+//         top: 0;
+//         height: 630px;
+        
+//         .record-name {
+//             margin-bottom: 20px;
+//             text-align: left;
+//             font-weight: 600;
+//             color: #FFFFFF;
+//             font-size: 16px;
+//             width: 83px;
+//         }
+
+//         &-list {
+//             margin-top: 50px;
+//             color: #fff;
+
+//             div {
+//                 padding: 0 px;
+//                 height: 45px;
+//                 line-height: 45px;
+//                 font-size: 14px;
+//                 color: rgba(255, 255, 255, .5);
+
+//                 .value {
+//                     color: #fff;
+
+//                     img {
+//                         margin-top: 7.5px;
+//                         width: 30px;
+//                         height: 30px;
+//                         margin-left: 10px;
+//                     }
+
+//                     .icon {
+//                         margin-top: 7.5px;
+//                         width: 30px;
+//                         height: 30px;
+//                         line-height: 30px;
+//                         margin-left: 5px;
+//                         font-size: 16px;
+//                         text-align: center;
+//                         color: #fff;
+//                         border-radius: 4px;
+//                         font-weight: 600;
+//                         background: #FF9090;
+//                         border-radius: 4px;
+//                     }
+//                 }
+
+//                 border-bottom: 1px solid rgba(255, 255, 255, .03);
+//             }
+//         }
+//     }
+
+// }
+
+// .award-result-item {
+//     position: relative;
+//     padding: 20px 0;
+//     border-bottom: 1px solid rgba(255, 255, 255, .03);
+//     color: #fff;
+//     text-align: center;
+//     cursor: pointer;
+
+//     .timer {
+//         color: rgba(255, 255, 255, .5);
+//     }
+
+//     .xjt-icon {
+//         position: absolute;
+//         right: 10px;
+//         top: 50%;
+//         transform: translateY(-50%);
+//     }
+
+//     .b-t-i {
+//         margin-top: 27px;
+//         color: rgba(255, 255, 255, .5);
+//         font-size: 12px;
+
+//         .value {
+//             margin-left: 10px;
+//             font-weight: 600;
+//             color:rgba(255, 111, 111, 1);
+//             font-size: 20px;
+//         }
+//     }
+
+//     .result-img {
+//         position: absolute;
+//         right: 40px;
+//         bottom: 0;
+//     }
+// }

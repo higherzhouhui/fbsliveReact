@@ -1,0 +1,91 @@
+@import "../../../../assets/style/index.scss";
+.follow {
+    position: fixed;
+    top: calc(100vh - 130px);
+    left: 16px;
+    z-index: 2000;
+
+    width: 257px;
+    height: 50px;
+    background: url("../../../../assets/image/newImg/gzkp.png") no-repeat;
+    background-size: 100% 100%;
+
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    animation: identifier 8s infinite linear;
+
+    .content {
+        margin-left: 4px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        p {
+            width: 140px;
+            font-size: 12px;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #333333;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        div {
+            width: 140px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            font-size: 10px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #666666;
+
+            margin-top: 8px;
+        }
+    }
+    .but {
+        width: 65px;
+        height: 32px;
+        background: url("../../../../assets/image/newImg/gzkpIcon.png") no-repeat;
+        background-size: 100% 100%;
+
+        font-size: 12px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #ffffff;
+        text-align: center;
+        line-height: 32px;
+
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        z-index: 999;
+    }
+}
+
+@keyframes identifier {
+    0% {
+        left: -1000px;
+    }
+    20% {
+        left: 16px;
+    }
+    50% {
+        left: 16px;
+    }
+    70% {
+        left: 16px;
+    }
+    100% {
+        left: -1000px;
+    }
+}

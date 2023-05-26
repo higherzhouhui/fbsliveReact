@@ -1,0 +1,233 @@
+@import "../../../assets/style/index.scss";
+
+.bodys {
+  background: $primary;
+  padding-top: 45px;
+
+  overflow: hidden;
+}
+.container {
+  height: calc(100vh - 45px);
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 73px;
+}
+.videoInfo2F canvas {
+  width: 100%;
+  // height: calc(100vh - 321px) !important;
+  top: 30% !important;
+  left: 50% !important;
+
+  transform: translate(-50%, -50%) !important;
+}
+.center {
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px 8px;
+  box-sizing: border-box !important;
+  .center_div {
+    box-sizing: border-box;
+    width: 100%;
+    height: 118px;
+    background: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #fff;
+    &.center_border {
+      border: 1px solid #ff839b;
+    }
+    .img {
+      width: 100%;
+      height: 80px;
+    }
+    .bottom {
+      width: 100%;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      overflow: hidden;
+      white-space: nowrap;
+      .bottom2 {
+        animation: sport 5s infinite linear;
+      }
+      @keyframes sport {
+        0% {
+          transform: translate(100%, 0);
+        }
+        100% {
+          /* 父盒子宽度减去100% */
+          transform: translate(-200%, 0);
+        }
+      }
+    }
+  }
+  .customSkeleton {
+    height: 118px;
+    border-radius: 8px;
+  }
+}
+
+.btnBox {
+  width: 100%;
+  padding: 5px 34px 28px 34px;
+  background: #fff;
+  z-index: 1;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+
+  .buts {
+    width: 100%;
+    height: 40px;
+    background: #ff839b;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+  }
+}
+.windowBottom2 {
+  background: 0;
+  // color: #fff;
+  border-radius: 0;
+}
+.Popup1 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  z-index: 9999999;
+
+  border-radius: 10px 10px 0 0;
+  background: #fff;
+  width: 100%;
+  height: 390px;
+  padding: 15px 16px;
+
+  .titles {
+    width: 100%;
+    font-size: 18px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #333333;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .imgs {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 18px;
+        height: 18px;
+      }
+
+      position: relative;
+      z-index: 1300;
+    }
+
+    margin-bottom: 16px;
+  }
+
+  .Popup1Center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+
+    margin-bottom: 40px;
+
+    .Popup1_center_div {
+      height: 76px;
+      border-radius: 8px;
+      border: 1px solid #e8e8e8;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      font-size: 14px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #ff839b;
+
+      .Popup1_center_div_money {
+        margin-top: 15px;
+
+        font-size: 14px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #333333;
+      }
+    }
+
+    .Popup1_border {
+      background: rgba(255, 131, 155, 0.3);
+      border: 1px solid #ff839b;
+    }
+  }
+}
+
+.btnBox2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .buts2 {
+    width: calc(100% - 32px);
+    height: 42px;
+    background: #ff839b;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+  }
+}
+
+.sclog {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 16px;
+  top: 112px;
+
+  z-index: 99;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.Empty {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skBody {
+  padding-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px 8px;
+  .customSkeleton {
+    height: 118px;
+    border-radius: 8px;
+  }
+}

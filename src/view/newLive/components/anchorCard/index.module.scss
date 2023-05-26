@@ -1,0 +1,55 @@
+.styles {
+    max-width: 100vw !important;
+    word-break: break-all; /* 只对英文起作用，以字母作为换行依据。  */
+    word-wrap: break-word; /* 只对英文起作用，以单词作为换行依据。  */
+    white-space: pre-wrap;
+}
+.style1 {
+    position: absolute;
+    // border: 1px solid #fff;
+    padding: 15px 14px;
+
+    font-size: 17px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+}
+.style2 {
+    position: absolute;
+
+    padding: 15px 14px;
+
+    font-size: 17px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #221a16;
+
+    background: #ffffff;
+}
+.style3 {
+    position: absolute;
+
+    padding: 15px 14px;
+
+    font-size: 17px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #221a16;
+
+    background: #ffffff;
+    border-radius: 10px;
+}
+.style4 {
+    position: absolute;
+    padding: 15px 14px;
+
+    background: rgba(238, 73, 75, 0.15);
+    border-radius: 10px;
+
+    font-size: 17px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ee494b;
+
+    // white-space: pre-wrap !important;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="24"></rect>
+    </defs>
+    <g id="ic/24/APP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="蒙版"></g>
+            <path d="M19,0 C20.1045695,-2.02906125e-16 21,0.8954305 21,2 L21,22 C21,23.1045695 20.1045695,24 19,24 L5,24 C3.8954305,24 3,23.1045695 3,22 L3,2 C3,0.8954305 3.8954305,-2.41183085e-16 5,0 L19,0 Z M12,18 C10.8954305,18 10,18.8954305 10,20 C10,21.1045695 10.8954305,22 12,22 C13.1045695,22 14,21.1045695 14,20 C14,18.8954305 13.1045695,18 12,18 Z M14.5,2 L9.5,2 C9.22385763,2 9,2.22385763 9,2.5 C9,2.77614237 9.22385763,3 9.5,3 L14.5,3 C14.7761424,3 15,2.77614237 15,2.5 C15,2.22385763 14.7761424,2 14.5,2 Z" id="形状结合" fill="#4E4E4E" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

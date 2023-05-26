@@ -1,0 +1,132 @@
+@import "../../../assets/style/index.scss";
+
+.bodys {
+    background: #f9f9f9;
+    height: 100vh;
+    padding-top: 45px;
+
+    overflow: hidden;
+}
+.wbg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    background: none;
+}
+.leftImg {
+    width: 22px;
+    height: 22px;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 40px 33px 12px;
+    // padding-top: 57px; //45+12
+    background: #f9f9f9;
+    // padding-bottom: 70px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.title {
+    font-size: 23px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #333333;
+
+    margin-bottom: 27px;
+
+    p {
+        margin-top: 9px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #666666;
+    }
+}
+.box {
+    padding-left: 12px;
+    padding-right: 8px;
+
+    height: 81px;
+    background: #fff;
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-columns: 38px auto 17px;
+    gap: 8px;
+    align-items: center;
+
+    margin-bottom: 9px;
+
+    position: relative;
+
+    .ElderlyPeople {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+
+        min-width: 75px;
+        padding: 0 6px;
+        height: 24px;
+        background: linear-gradient(180deg, #ffce9e 0%, #ff7230 100%);
+        border-radius: 2px 8px 2px 8px;
+        // border: 1px solid linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 147, 93, 1));
+        // border-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 147, 93, 1));
+
+        font-size: 12px;
+        font-family: Din;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 24px;
+        text-align: center;
+    }
+    .img_left {
+        width: 38px;
+        height: 38px;
+    }
+    div {
+        font-size: 15px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #333333;
+
+        p {
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #666666;
+
+            margin-top: 12px;
+        }
+    }
+    .img_right {
+        width: 17px;
+        height: 17px;
+    }
+}
+.pointAut {
+    margin-top: 10px;
+
+    div {
+        font-size: 13px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #333333;
+
+        margin-bottom: 4px;
+    }
+    p {
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+
+        line-height: 21px;
+    }
+    .fontSize {
+        color: #999999;
+    }
+}

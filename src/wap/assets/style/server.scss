@@ -1,0 +1,35 @@
+.maintenances {
+    background: none;
+
+    .adm-modal-footer-empty {
+        height: 0;
+    }
+
+    .adm-modal-body {
+        width: calc(100vw - 22px) !important;
+    }
+}
+
+.adm-center-popup {
+    --max-width: calc(100vw - 24px) !important;
+    --min-width: calc(100vw - 24px) !important;
+}
+
+.adm-modal-body:not(.adm-modal-with-image) {
+    padding-top: 0px !important;
+}
+
+.adm-modal-content {
+    padding: 0px;
+}
+
+.adm-scroll-mask-right {
+    display: none;
+}
+
+.adm-scroll-mask-left {
+    display: none;
+}
+.maskClassNames {
+    z-index: 9999999;
+}

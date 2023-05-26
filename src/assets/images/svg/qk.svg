@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="24"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#666666" offset="0%"></stop>
+            <stop stop-color="#4E4E4E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ic/24/提款" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="矩形"></g>
+        <path d="M22,3 C23.1045695,3 24,3.8954305 24,5 L24,10 L16,10 C14.8954305,10 14,10.8954305 14,12 C14,13.1045695 14.8954305,14 16,14 L24,14 L24,19 C24,20.1045695 23.1045695,21 22,21 L2,21 C0.8954305,21 -3.0881846e-16,20.1045695 0,19 L0,5 C-1.3527075e-16,3.8954305 0.8954305,3 2,3 L22,3 Z M7,5 L3,5 C2.44771525,5 2,5.44771525 2,6 C2,6.55228475 2.44771525,7 3,7 L7,7 C7.55228475,7 8,6.55228475 8,6 C8,5.44771525 7.55228475,5 7,5 Z" id="形状结合" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+        <circle id="椭圆形" fill="#4E4E4E" mask="url(#mask-2)" cx="16" cy="12" r="1"></circle>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+.group-activity {
+    max-height: 560px;
+    .activity-loading {
+        width: 320px;
+        min-height: 100px;
+    }
+    .activity-nodata{
+        width: 320px;
+        text-align: center;
+        margin: 80px auto;
+        color: #ccc;
+    }
+
+    .item {
+        color: #fff;
+        font-size: 12px;
+        position: relative;
+
+        .info-banner {
+            width: 320px;
+            height: 130px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    }
+}

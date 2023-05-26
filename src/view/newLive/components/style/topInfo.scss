@@ -1,0 +1,175 @@
+.container-live-top {
+    width: 100%;
+    height: 90px;
+    background: #161722;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &-left {
+        display: flex;
+        align-items: center;
+        text-align: left;
+
+        .avatar {
+            margin-right: 10px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .title {
+                font-size: 20px;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 0.88);
+                line-height: 20px;
+                margin-bottom: 12px;
+            }
+
+            .signature {
+                font-size: 12px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.45);
+                line-height: 12px;
+            }
+
+        }
+    }
+
+    &-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .collect-box {
+            min-height: 32px;
+            border-radius: 23px;
+            overflow: hidden;
+            min-width: 126px;
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, .1);
+            height: 32px;
+            border-radius: 16px;
+            color: #fff;
+            margin-right: 10px;
+
+            &-item {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 32px;
+                padding: 0 10px;
+                font-size: 14px;
+
+                &:last-child {
+                    border-radius: 32px;
+                }
+            }
+
+            &-status {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 32px;
+                width: 80%;
+                color: #Fff;
+                background: #FC708B;
+                cursor: pointer;
+                white-space: nowrap;
+            }
+        }
+
+        .share-box {
+            margin-left: 10px;
+            color: #fff;
+            cursor: pointer;
+            padding: 5px 16px;
+
+            height: 32px;
+            background: rgba(255, 255, 255, .1);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+
+            .icon-share {
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                margin-right: 4px;
+            }
+
+            &:hover {
+                background: #FC708B;
+                color: #fff;
+            }
+        }
+    }
+
+}
+.share-dropdown{
+    .ant-dropdown-arrow{
+        background: #36373C;
+        &::before{
+            width: 15px;
+            height: 15px;
+            background: #36373C;
+        }
+    }
+}
+
+.share-box-warp {
+    padding: 20px;
+    // height: 176px;
+    background: #36373C;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .share-icon {
+            width: 36px;
+            height: 36px;
+            display: inline-block;
+            margin: 0 auto;
+            margin-bottom: 8px;
+        }
+
+        .share-name {
+            height: 12px;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(255, 255, 255, .6);
+            line-height: 12px;
+
+        }
+
+        &:hover {
+            .share-name {
+                color: #FC708B;
+            }
+        }
+    }
+    
+}

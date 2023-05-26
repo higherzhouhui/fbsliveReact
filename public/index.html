@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 绝对路径引入图标文件 -->
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script type="text/javascript" src="/hls.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4EJ3KFDLH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S4EJ3KFDLH");
+    </script>
+  </head>
+
+  <style>
+    .loadingPng {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      object-fit: contain;
+    }
+  </style>
+
+  <body>
+    <!-- 容器节点 -->
+    <div id="root"></div>
+  </body>
+
+  <script type="text/javascript" src="/cstaticdun.js"></script>
+  <script type="text/javascript" src="/svga.min.js"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: "462300766041707",
+        status: true,
+        // autoLogAppEvents: true,
+        cookie: true,
+        xfbml: true,
+        version: "v16.0",
+      });
+    };
+  </script>
+</html>

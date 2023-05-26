@@ -1,0 +1,97 @@
+.container-reward {
+    box-sizing: border-box;
+    text-align: left;
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+
+    .reward-search {
+        margin-bottom: 20px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+
+        .min-title {
+            margin-bottom: 18px;
+        }
+
+        .tips {
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.45);
+            line-height: 12px;
+            margin-bottom: 15px;
+        }
+
+        .search {
+            .item {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .label {
+                    font-size: 14px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.88);
+                    line-height: 14px;
+                    margin-right: 10px;
+                    min-width: 66px;
+                    text-align: center;
+                }
+
+                .btn-group {
+                    margin-left: auto;
+
+                    .btn {
+                        width: 90px;
+                        height: 36px;
+
+                        &:last-child {
+                            margin-left: 20px;
+                            background: rgba(255, 255, 255, 0.2);
+                            border-radius: 5px;
+                            border: 1px solid rgba(0, 0, 0, 0.1);
+                            color: #999;
+                        }
+                    }
+                }
+            }
+
+            .ant-picker,
+            .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+                border: 1px solid #E5E5E5;
+                border-radius: 5px;
+                height: 36px;
+                width: 240px;
+
+                .ant-picker-focused,
+                &:hover,
+                &:visited,
+                &.active,
+                &.focus {
+                    cursor: pointer;
+                    border: 1px solid #ff839b;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    .reward-table {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        flex: 1;
+        min-height: 615px;
+        &.tzHeight{
+            min-height: 590px;
+        }
+    }
+}

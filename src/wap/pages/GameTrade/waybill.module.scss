@@ -1,0 +1,32 @@
+.wayBody {
+  padding: 24px 12px;
+  overflow-x: scroll;
+  .grid {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+  }
+  .box {
+    width: 30px;
+    height: 30px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.red::before,
+    &.blue::before {
+      content: "";
+      min-width: 24px;
+      min-height: 24px;
+      width: 24px;
+      height: 24px;
+      border: 1px solid red;
+      display: inline-block;
+      border-radius: 100%;
+    }
+    &.blue::before {
+      border-color: blue;
+    }
+  }
+}

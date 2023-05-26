@@ -1,0 +1,153 @@
+.piking-box {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+
+    .processing {
+        position: relative;
+
+        .s-icon {
+            z-index: 2;
+            position: absolute;
+            color: #fff;
+
+            &.left {
+                left: 12px;
+            }
+
+            &.right {
+                right: 12px;
+            }
+
+            &.left-cf,
+            &.right-cf {
+                position: absolute;
+                top: 35px;
+                height: 24px;
+            } 
+            &.left-cf{
+                left: 250px;
+            }
+
+            &.right-cf {
+                right: 250px;
+            }
+        }
+    }
+
+    .djs-box {
+        margin-bottom: 10px;
+        width: 112px;
+        height: 30px;
+        background: url('../../../../assets/images/live/pk/bg.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            display: inline-block;
+            color: #fff;
+            font-size: 16px;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #FFFFFF;
+            line-height: 16px;
+            img{
+                vertical-align: baseline;
+            }
+        }
+    }
+
+    .ant-progress-text {
+        display: none;
+    }
+
+    .ant-progress-status-success {
+        .ant-progress-bg {
+            background-color: #179eff;
+        }
+
+    }
+
+    .ant-progress-inner {
+        background-color: #ff2b77;
+        border-radius: 10px 10px 0 0;
+
+        .ant-progress-bg {
+            border-radius: 10px 24px 24px 0;
+        }
+    }
+
+    .ant-progress-show-info .ant-progress-outer {
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .head-icon-box {
+        width: 40%;
+        margin: 10px auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .head-icon {
+        width: 400px;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        flex-wrap: wrap;
+        animation: leftShow 0.7s ease-in-out;
+
+        &.right-head {
+            flex-direction: row-reverse;
+            animation: rightShow 0.7s ease-in-out;
+            img {
+                margin-left: 10px;
+                margin-right: 0;
+            }
+        }
+
+    }
+}
+
+@keyframes leftShow {
+    0% {
+        left: -100px;
+        transform: scaleY(0.1);
+    }
+
+    50% {
+        left: 0;
+        transform: scaleY(0.1);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes rightShow {
+    0% {
+        right: -100px;
+        transform: scaleY(0.1);
+    }
+
+    50% {
+        right: 0;
+        transform: scaleY(0.1);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}

@@ -1,0 +1,28 @@
+.user-container {
+    background: #f6f6f6;
+    min-height: 100vh;
+    overflow: hidden;
+    min-width: 1200px;
+
+    .center-box {
+        margin: 140px auto 30px;
+        display: flex;
+        border-radius: 8px;
+        width: 1200px;
+        overflow: hidden;
+
+        .left {
+            margin-right: 20px;
+            width: 240px;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        .right {
+            width: 940px;
+            // background-color: #fff;
+            border-radius: 10px;
+            position: relative;
+        }
+    }
+}

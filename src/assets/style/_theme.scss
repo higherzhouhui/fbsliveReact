@@ -1,0 +1,376 @@
+/* global themes */
+$black: #000;
+$white: #fff;
+$light_gray: #f2f2f2;
+$primary: #ff839b;
+// $primary: #FF5E86;
+
+/* default themes */
+$primary_color: #3c4150;
+$purple: #3e4052;
+$yellow_color: #fbb03b;
+$orange_color: #ed7d31;
+$darkorange: #f9b605;
+$red_color: #d53838;
+$orange_light: #fbe5d6;
+$link_color: linear-gradient(#fce645, #f69235);
+$blue_color: #2e75b6;
+$b2bDefault_gray: #1a1a1a;
+$b2bDefault_blue: #24252d;
+$b2bDefault_medium_blue: #747883;
+$b2bDefault_dark_blue: #3b414f;
+$base: #ffffff;
+$night: #000000;
+/* classic_black_color */
+$white_color: #ffffff;
+$gold_color: #ddba70;
+$gray_color: #b2b2b2;
+$dark_gray_color: #666666;
+$b2bBlack_medium_yellow: #f9c81e;
+$b2bBlack_medium_orangeYellow: #c99649;
+$b2bBlack_light_orangeYellow: #ddba70;
+$b2bBlack_purple_blue: #444252;
+$b2bBlack_blue: #0e1629;
+$b2bBlack_medium_blue: #183158;
+$b2bBlack_medium_blue2: #2b3443;
+$b2bBlack_Black_blue: #010307;
+
+/* Sport_default */
+$b2bSport_red_color: #e52c39;
+$b2bSport_dark_red_color: #760d15;
+$b2bSport_yellow_color: #eac80d;
+$b2bSport_dark_yellow_color: #bfa30c;
+$b2bSport_blue: #2b2937;
+$b2bSport_dark_green: #3b4a56;
+$b2bSport_green: #1abc9c;
+$b2bSport_light_green_black: #dcf9ee;
+$b2bSport_orange: #f15a24;
+$b2bSport_dark_yellow: #7a640a;
+$b2bSport_dark_medium_yellow: #ccc08d;
+$b2bSport_coffee: #847d5e;
+$b2bSport_gold: #aa871a;
+
+$b2bSport_green_color: #1abc9c;
+$b2bSport_login_green: #77c00b;
+$b2bSport_light_green: #f2fbf8;
+$b2bSport_medium_green: #18937b;
+$b2bSport_heavy_green: #053e33;
+$b2bSport_game_red: #df4a32;
+$b2bSport_game_medium_red: #961500;
+$b2bSport_gray: #919191;
+$b2bSport_yellow: #e6be1a;
+$b2bSport_ball_background: #fffaea;
+$b2bSport_game_yellow: #996600;
+$b2bSport_medium_yellow: #e5bd1a;
+
+$b2bSportGame_green: $b2bSport_green_color;
+$b2bSportGame_green_shadow: $b2bSport_medium_green;
+$b2bSportGame_green_hover: $b2bSport_medium_green;
+$b2bSportGame_green_hover_shadow: #0c5d4d;
+$b2bSportGame_red: $b2bSport_game_red;
+$b2bSportGame_red_shadow: $b2bSport_game_medium_red;
+$b2bSportGame_red_hover: #9d1803;
+$b2bSportGame_red_hover_shadow: #6e1102;
+
+$b2bSportGame_yellow: $b2bSport_yellow;
+$b2bSportGame_yellow_shadow: $b2bSport_game_yellow;
+$b2bSportGame_yellow_hover: #b7950b;
+$b2bSportGame_yellow_hover_shadow: $b2bSport_game_yellow;
+
+$font_base: 16px;
+$font_family: "Microsoft Yahei", "Microsoft JhengHei", tahoma, Srial, helvetica, sans-serif;
+
+/* themes */
+$deep_gray: #424242;
+$medium_gray: #808080;
+$light_gray: #f2f2f2;
+$dark_medium_orange: #d9891f;
+$dark_light_blue: #0978d9;
+$medium_red: #d53838;
+$medium_green: #20a853;
+$midium_blue: #2e75b6;
+$powderBlue: #5475a9;
+$powderBlueLight: #3b6fc2;
+$powderYellow: #e8a938;
+$powderYellowLight: #f5bd14;
+$radius: 4px;
+
+/* Layout 共用參數 */
+
+$layoutWidth: 1024px;
+$SportLayoutWidth: 960px;
+
+@mixin fixed_width {
+    position: relative;
+    width: 100%;
+    max-width: $layoutWidth;
+    margin: 0 auto;
+}
+
+@mixin sport_width {
+    position: relative;
+    width: 100%;
+    max-width: $SportLayoutWidth;
+    margin: 0 auto !important;
+}
+
+clearfix {
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+floatLeft {
+    float: left;
+}
+
+floatRight {
+    float: right;
+}
+
+virtual_el {
+    content: "";
+    display: block;
+}
+
+@mixin obj_size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin vertical_middle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@mixin vertical_before {
+    &::before {
+        content: "";
+        display: block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
+@mixin obj_animate($name, $duration, $mode: both, $delay: 0) {
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-fill-mode: $mode;
+    animation-name: $name;
+}
+
+@mixin btn_style($v, $w, $r) {
+    display: inline-block;
+    padding: $v $w;
+    border-radius: $r;
+}
+
+// 動畫
+@mixin animate($name, $duration, $mode: both, $delay: 0) {
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-fill-mode: $mode;
+    animation-name: $name;
+}
+
+@mixin size($width, $height: $width) {
+    height: $height;
+    width: $width;
+}
+
+// 按鈕
+@mixin button_area {
+    display: block;
+    margin: 15px auto 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+
+    button {
+        display: inline-block;
+        margin: 0 5px;
+        min-width: 60px;
+        border: none;
+        font-size: 12px;
+        border-radius: $radius;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+}
+.radio_style {
+    display: inline-block;
+    position: relative;
+
+    input[type="radio"] {
+        position: absolute;
+        left: -9999px;
+        z-index: -9999;
+        visibility: hidden;
+
+        & + label {
+            padding: 5px;
+            padding-left: 20px;
+            margin-right: 15px;
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: middle;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                top: 7px;
+                left: 0;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                border: 1px solid #999;
+            }
+
+            &::after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                top: 11px;
+                left: 4px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: none;
+            }
+        }
+
+        &:checked + label::after {
+            background: #666;
+        }
+    }
+}
+
+.radio_style {
+    input[type="checkbox"] {
+        position: absolute;
+        left: -9999px;
+        z-index: -9999;
+        visibility: hidden;
+
+        & + label {
+            padding: 5px;
+            padding-left: 24px;
+            cursor: pointer;
+            text-align: left !important;
+            min-width: auto;
+            @include vertical_middle;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                top: 7px;
+                left: 0px;
+                width: 16px;
+                height: 16px;
+                border-radius: 0;
+                border: 2px solid #999;
+            }
+        }
+
+        &:checked + label::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 11px;
+            left: 3px;
+            width: 11px;
+            height: 5px;
+            background: none;
+            border: 2px solid #424242;
+            border-top: none;
+            border-right: none;
+            transform: rotate(-45deg);
+            border-radius: 0;
+        }
+    }
+}
+
+button:disabled,
+button[disabled] {
+    background: linear-gradient(180deg, #fcb7c9 0%, #fc708b 100%);
+    color: #c9c9c9 !important;
+    cursor: not-allowed !important;
+}
+
+/* sport版 投注頁按鈕 */
+@mixin game_btn($ra, $BGColor, $shadow, $hoverBGColor, $hoverShadow) {
+    border-radius: $ra;
+    background: $BGColor;
+    box-shadow: 0 3px 0 $shadow;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: $hoverBGColor;
+        box-shadow: 0 3px 0 $hoverShadow;
+        transition: all 0.2s ease;
+    }
+}
+
+$_link-default: #1e5adc;
+$_el-table-header: #f9f9f9;
+$_card_primary: #00be40;
+$_card__primary_hover: #abc0fa;
+$_card__bg: rgba(31, 85, 240, 0.1);
+$_card_title_bg: #eaeaea;
+
+$btn_primary: #00be40;
+$_btn_recoer: #00be40;
+$_btn2_bg: #e8eefd;
+
+$_gray80: #cccccc;
+$_gray75: #999999;
+$_gray50: #666666;
+$_gray20: #333333;
+$_gary77: #c4c4c4;
+$_garyf5: #f5f5f5;
+$_garyf1: #f1f1f1;
+$_dim_gray: #646464;
+$_matterhorn: #4f4f4f;
+$_night_rider: #303030;
+$_white_smoke: #efefef;
+$_white_smoke20: #f0f0f0;
+$_silver: #c3c2c2;
+
+$_circle: #ff4a4a;
+
+$_error: #ff0000;
+$_succss: #008000;
+$_info: #ffff00;
+$_warning: #ffa600;
+
+$_table_th_bg: linear-gradient(135deg, #edd5bf 0%, #e8cfb8 100%) !important;
+$_teble_td_bg: #303237;
+$_title_gray: #999999;
+$_table_td_color: #d4b398;
+
+$_sidebar_menu: $_btn_recoer;
+$_user_score_title: #c5d5ff;
+$_user_score_color: $night;
+$_user_score_text: #ffcf65;
+$_box-shadow: transparent;
+$_insterest_color: $base;
+
+$_wallet_name: #ffcf65;
+
+$_vip_color: #d6b59a;
+
+$_wallet_action_color: $base;
+
+$_bg_lighten_primary: rgba(31, 85, 240, 0.05);

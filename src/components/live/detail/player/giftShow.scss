@@ -1,0 +1,112 @@
+.gift-show-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+
+
+    .fade-exit-active {
+        opacity: 0;
+        transform: translateX(-200px);
+        transition: all 1s ease-in;
+    }
+
+    &-item {
+        margin-bottom: 20px;
+        position: relative;
+        padding: 5px;
+        animation: leftShow 0.7s ease-in-out;
+        display: flex;
+        align-items: center;
+        width: 202px;
+        height: 40px;
+        background: linear-gradient(90deg, #B0CAF2 0%, #63678B 100%);
+        border-radius: 20px 5px 20px 20px;
+        color: #fff;
+        text-align: left;
+        transition: 1s all;
+        opacity: 1;
+        left: 0;
+
+        &-1 {
+            background: linear-gradient(90deg, #B8B0F2 0%, #6A638B 100%);
+        }
+
+        &-3 {
+            background: linear-gradient(90deg, #F2D8B0 0%, #8B6F63 100%);
+        }
+
+        .avater {
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #FFFFFF;
+        }
+
+        
+        .combo-box {
+            position: absolute;
+            right: -60px;
+            bottom: 0;
+            font-size: 20px;
+            color: #02bc42;
+            font-weight: 600;
+            transform: scale(0);
+
+            span {
+                font-weight: 700;
+                font-size: 40px;
+                color: #FFBC20;
+                font-family: Roboto-Bold, Roboto;
+            }
+            &.fade2-enter-active {
+                transform: scale(1);
+                transition: all .5s ease-in;
+            }
+            &.fade2-enter-done {
+                transform: scale(1);
+              }
+        }
+
+        .avatar-name {
+            max-width: 110px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 14px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .avatar-dec {
+            margin-top: 3px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, .5)
+        }
+
+        .game-gift-icon {
+            height: 65px;
+            position: absolute;
+            top: 46%;
+            transform: translateY(-50%);
+            left: 140px;
+        }
+    }
+}
+
+@keyframes leftShow {
+    0% {
+        left: -100px;
+        transform: scaleY(0.1);
+    }
+
+    50% {
+        left: 0;
+        transform: scaleY(0.1);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}

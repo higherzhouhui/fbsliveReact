@@ -1,0 +1,262 @@
+@import "../../assets/style/index.scss";
+
+.bodys {
+    // background: linear-gradient(180deg, #815ced 0%, #bfa5fa 100%);
+    background: url("../../assets/image/RankingList/bj.png");
+    background-size: 100% 100%;
+    height: 100vh;
+
+    // width: 100%;
+
+    .title {
+        font-size: 18px;
+        font-family: Arial;
+        font-weight: 400;
+        color: #ffffff;
+        margin-left: 25px;
+        padding-top: 15px;
+        margin-bottom: 18px;
+    }
+
+    .tabs1 {
+        height: 37px;
+
+        background: rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 19px;
+    }
+}
+
+.boxs {
+    width: 33%;
+
+    .boxs_div {
+        width: 100%;
+        height: 108.5px;
+    }
+    .boxs_div2 {
+        width: 100%;
+        height: 90px;
+        position: absolute;
+        top: 4px;
+        left: 2px;
+        z-index: 1;
+    }
+    .font_size_p {
+        position: absolute;
+        top: 130px;
+        left: 25px;
+        z-index: 4;
+
+        width: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .font_size_p2 {
+        position: absolute;
+        top: 105px;
+        left: 50%;
+        z-index: 4;
+        transform: translate(-50%, 0);
+        width: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .font_size_p3 {
+        position: absolute;
+        top: 135px;
+        right: 25px;
+        z-index: 4;
+
+        width: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .boxs_font1 {
+        font-size: 14px;
+        font-family: Arial;
+        font-weight: 400;
+        color: #ffffff;
+
+        // margin-top: 7px;
+        text-align: center;
+
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-gap: 4px;
+        div {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .imgsDiv {
+            display: flex;
+            align-items: center;
+        }
+        img {
+            width: 31px;
+            height: 14px;
+        }
+        .hzImg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .boxs_font2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4px;
+        margin-bottom: 4px;
+
+        font-size: 14px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #ffffff;
+
+        img {
+            width: 11px;
+            height: 10px;
+            margin-right: 5px;
+        }
+
+        .boxs_font2_g {
+            animation: identifier 5s infinite linear;
+        }
+    }
+}
+@keyframes identifier {
+    0% {
+        transform: translate(100%, 0);
+    }
+    100% {
+        /* 父盒子宽度减去100% */
+        transform: translate(-200%, 0);
+    }
+}
+
+.follow_big {
+    min-width: 60px;
+    height: 22px;
+    background: rgba(255, 131, 155, 0);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.follow_bigs {
+    border: none;
+    background: #fecfd7;
+}
+
+.follow_big2 {
+    min-width: 60px;
+    height: 22px;
+    background: #ff839b;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.follow_big2s {
+    background: #ededed;
+
+    color: #999999;
+}
+.RankingLists {
+    border-radius: 18px 18px 0 0;
+    background: #ffffff;
+    min-height: calc(100vh - 340px);
+    padding: 20px 32px 50px 28px;
+    margin-top: -62px;
+    position: relative;
+
+    .RankingLists_div {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: 18px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #575757;
+        margin-bottom: 17px;
+
+        .RankingLists_div_center {
+            font-size: 14px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: #8c8c8c;
+
+            .RankingLists_div_name {
+                max-width: 130px;
+                display: grid;
+                grid-template-columns: 1fr auto;
+                align-items: center;
+                grid-gap: 10px;
+                div {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                .imgsDiv {
+                    display: flex;
+                    align-items: center;
+                }
+                img {
+                    width: 31px;
+                    height: 14px;
+                }
+                .hzImg {
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+}
+.rankValue {
+    font-size: 14px !important;
+    color: #666 !important;
+}
+.zbLog {
+    width: 49.5px;
+    height: 55px;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.gd_font {
+    animation: sport 5s infinite linear;
+}
+@keyframes sport {
+    0% {
+        transform: translate(100%, 0);
+    }
+    100% {
+        /* 父盒子宽度减去100% */
+        transform: translate(-200%, 0);
+    }
+}

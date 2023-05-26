@@ -1,0 +1,111 @@
+@import "../../../assets/style/index.scss";
+
+.container {
+    min-height: 100vh;
+    padding: 12px;
+    padding-top: 57px; //45+12
+    background: $primary;
+}
+
+.list {
+    width: 100%;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    .item {
+        display: flex;
+        align-items: center;
+        .avatar{
+            border-radius: 100%;
+            width: 44px;
+            height: 44px;
+            margin-right: 12px;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        .nickname {
+            font-size: 14px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 14px;
+        }
+
+        .imgs {
+            margin-left: 8px;
+            margin-right: 8px;
+            height: 14px;
+        }
+
+        .level {
+            height: 14px;
+        }
+    }
+
+    .right {
+        width: 170px;
+        width: 170px;
+        font-size: 12px;
+        color: #999999;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .Swipers_But {
+        min-width: 48px;
+        border: 1px solid #e9e9e9;
+        border-radius: 11px;
+        font-size: 12px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #333333;
+        white-space: nowrap;
+        text-align: center;
+        line-height: 22px;
+        padding: 0px 8px;
+    }
+
+    .Swipers_But2 {
+        min-width: 48px;
+        height: 22px;
+        white-space: nowrap;
+        border-radius: 12px;
+        font-size: 12px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #cccccc !important;
+        background: #f5f5f5;
+        text-align: center;
+        line-height: 22px;
+        padding: 0px 8px;
+        border: none;
+    }
+}
+
+
+.fansSk {
+    .customSkeleton {
+        width: 100%;
+        height: 60px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+    }
+}

@@ -1,0 +1,233 @@
+@import "../../../assets/style/index.scss";
+.NavBar {
+    img {
+        width: 17px;
+        height: 4px;
+    }
+}
+.wcColor {
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+}
+.wbg {
+    background: #fff;
+    height: 50px;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+}
+.wbg2 {
+    background: #fff;
+    // height: 45px;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    top: 44px;
+}
+.container {
+    background: $hoary;
+    padding-top: 91px;
+    height: 100vh;
+}
+.container2 {
+    padding-bottom: 68px !important;
+}
+.bottom_but {
+    height: 68px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 400;
+}
+.center {
+    height: 100%;
+    box-sizing: border-box !important;
+    // padding-bottom: 70px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.center_div {
+    width: 100%;
+    height: 65px;
+    background: #fff;
+
+    padding-left: 13px;
+
+    .contents {
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        .contents_right {
+            display: flex;
+            align-items: center;
+        }
+        .icons {
+            width: 30px;
+            height: 30px;
+        }
+        .batchs {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+        }
+
+        .fonts {
+            width: 100%;
+            padding-right: 12px;
+            overflow: hidden;
+
+            .fonts_top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                font-size: 13px;
+                font-family: PingFang SC;
+                font-weight: 600;
+                color: #333333;
+
+                .font_time {
+                    font-size: 10px;
+                    font-family: PingFang SC;
+                    font-weight: 400;
+                    color: #666666;
+                }
+            }
+            .fonts_bot {
+                font-size: 12px;
+                font-family: PingFang SC;
+                font-weight: 400;
+                color: #666666;
+
+                margin-top: 8px;
+
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+        border-bottom: 1px solid #f4f4f4;
+    }
+}
+.Popups {
+    height: 100vh;
+
+    .content {
+        padding-top: 54px;
+        height: 100%;
+        background: #f6f7fc;
+
+        .content_bg {
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: 100%;
+            background: #fff;
+            .fontSizes {
+                padding: 14px;
+
+                font-size: 13px;
+                font-family: PingFang SC;
+                font-weight: 400;
+                color: #333333;
+                line-height: 21px;
+            }
+            .detaileds {
+                font-size: 13px;
+                font-family: PingFang SC;
+                font-weight: 400;
+                color: #3ba0f2;
+                line-height: 21px;
+
+                padding-left: 14px;
+            }
+        }
+    }
+}
+.Mask_content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: calc(100vw - 136px);
+    min-height: 153px;
+
+    background: #fff;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    .Mask_font {
+        padding: 20px;
+
+        border-bottom: 1px solid #f3f3f3;
+        .Mask_title {
+            font-size: 17px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: #333333;
+
+            margin-bottom: 15px;
+        }
+
+        font-size: 13px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #666666;
+        line-height: 20px;
+    }
+    .buts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 48px;
+
+        font-size: 18px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #333333;
+
+        border-radius: 0 0 8px 8px;
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 0px;
+            border: 0;
+            border-radius: 0 0 8px 8px;
+        }
+        .Btcolor {
+            border-left: 1px solid #f7f7f7;
+            color: #ff839b;
+        }
+    }
+}
+.prooSk {
+    height: 100%;
+    .customSkeleton {
+        height: 65px;
+        width: 100%;
+        border: 4px;
+        margin-bottom: 1px;
+    }
+}
+.prooSk2 {
+    height: 36px;
+    .customSkeleton {
+        height: 36px;
+        width: 100%;
+        border: 4px;
+    }
+}

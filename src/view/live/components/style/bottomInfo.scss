@@ -1,0 +1,369 @@
+.live-detail-bottom-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    &-record,
+    &-recharge,
+    .gift-box {
+        width: 98px;
+        height: 90px;
+        background: #161722;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .icon {
+            width: 44px;
+            height: 44px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .title {
+            margin-top: 10px;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.88);
+            line-height: 12px;
+        }
+
+    }
+
+    &-gift {
+        flex: 1;
+        background: #161722;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .ant-popover-arrow-content::before {
+        background: red !important;
+    }
+
+    .gift-group {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+
+        .gift-item {
+            background: #161722;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+            cursor: pointer;
+
+            .icon {
+                width: 44px;
+                height: 44px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .title {
+                margin-top: 10px;
+                font-size: 12px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.88);
+                line-height: 12px;
+            }
+        }
+    }
+}
+
+.gift-popover {
+    .ant-popover-inner-content {
+        padding: 0;
+    }
+
+    .ant-popover-arrow-content {
+        background: #12121c;
+
+        &::before {
+            width: 15px;
+            height: 15px;
+            background: #12121c;
+        }
+    }
+}
+.giftall-popover{
+    .ant-popover-arrow-content {
+        background: #36373c;
+        &::before {
+            width: 15px;
+            height: 15px;
+            background: #36373c;
+        }
+    }
+}
+
+.coin-box {
+    padding: 0 0 0 12px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 11px;
+    font-size: 14px;
+    color: #612ae0;
+    background: -webkit-linear-gradient(left,
+            rgb(235, 155, 255, 0.1) -4%,
+            rgb(224, 103, 255, 0.1) 70%,
+            rgb(94, 41, 224, 0.1) 100%);
+
+    .btn {
+        margin-left: 10px;
+        padding: 0 11px;
+        border-radius: 11px;
+        line-height: 22px;
+        height: 22px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.ds-alert-box {
+    .top-info {
+        padding: 10px;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+        .gift-info {
+            display: flex;
+            flex-direction: column;
+
+            .gname {
+                font-size: 16px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.88);
+                line-height: 16px;
+                margin-bottom: 12px
+            }
+
+            .goldCoin {
+                font-size: 12px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.88);
+                line-height: 12px;
+            }
+        }
+
+        img {
+            height: 50px;
+        }
+    }
+
+    .bottom-info-box {
+        padding: 5px 10px 15px 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+
+        .ant-btn {
+            border-radius: 5px;
+        }
+
+        .ant-input-number {
+            .ant-input-number-handler-wrap {
+                display: none;
+            }
+
+            transform: translateX(23px);
+            height: 26px;
+            line-height: 26px;
+            width: 55px;
+            // border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 5px 0 0 5px;
+            background: #2e2f3a;
+            border: none;
+            // background-color: unset;
+
+            input {
+                height: 26px;
+                line-height: 26px;
+                background-color: unset;
+                color: #fff;
+                border-radius: 19px 0 0 19px;
+                display: block;
+            }
+        }
+
+        .ant-btn-primary {
+            height: 26px;
+            padding: 0;
+            margin: 0;
+            padding: 0px 13px;
+        }
+    }
+
+    .btn {
+        padding: 0 16px;
+        height: 26px;
+        line-height: 26px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 14px;
+        border: 1px solid rgb(255, 255, 255, 0.5);
+        border-radius: 5px;
+        background: #171723;
+
+        &.hover-btn {
+            color: #000;
+            background: #fff;
+        }
+    }
+}
+
+.all-game-list {
+    text-align: center;
+    // width: 310px;
+    height: 280px;
+    overflow-x: auto;
+    flex-wrap: wrap;
+    color: #fff;
+
+    &-item {
+        padding: 5px;
+        cursor: pointer;
+
+        .game-icon {
+            height: 40px;
+            margin-bottom: 12px;
+
+            &.radius {
+                border-radius: 50%;
+            }
+        }
+
+        .g-name {
+            overflow: hidden;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.88);
+            line-height: 12px;
+
+            .g-name2 {
+                white-space: nowrap;
+                animation: sport 5s infinite linear;
+                overflow: visible !important;
+            }
+        }
+
+        @keyframes sport {
+            0% {
+                transform: translate(100%, 0);
+            }
+
+            100% {
+                transform: translate(-150%, 0);
+            }
+        }
+
+        &.gift-item {
+            img {
+                margin-bottom: 5px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+.giftTypeList {
+    height: 24px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    justify-content: flex-start;
+    color: rgba(255, 255, 255, 0.88);
+    width: 100%;
+
+    .title {
+        margin-right: 10px;
+        cursor: pointer;
+
+        &.active {
+            color: rgba(255, 255, 255);
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 50%;
+                height: 2px;
+                background: #FC708B;
+                display: block;
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+.giftBox {
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    .name {
+        line-height: 14px;
+        color: #fff;
+        margin-bottom: 7px;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+
+        .giftImg {
+            width: 11px;
+            margin-right: 3px;
+        }
+
+        color: #8c8c8e;
+    }
+}
+
+.giftGroup {
+    max-height: 230px;
+    margin-top: 15px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.actives2 {
+    @extend .giftBox;
+    background: rgba(62, 68, 71, 0.9);
+}
+
+.giftCover {
+    width: 40px;
+    height: 40px;
+}
+
+.name {
+    color: #f5910e;
+    margin: 0 10px;
+}
+
+.ant-popover-inner-content {
+    padding: 10px;
+}

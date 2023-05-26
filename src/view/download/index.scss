@@ -1,0 +1,103 @@
+@import "../../assets/style/base.scss";
+.app-bg {
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    background: url("../../assets/images/home/download-bg.png") no-repeat;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    // background-size: cover;
+}
+
+.app-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 118px 0 0;
+}
+
+.app-content {
+    width: 100%;
+    height: 565px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    .app-con-left {
+        width: 530px;
+        height: 100%;
+        border-radius: 20px;
+        padding: 20px 30px 12px;
+
+        .title {
+            text-align: left;
+            font-size: 24px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 32px;
+            margin-bottom: 15px;
+        }
+
+        .tips {
+            text-align: left;
+            font-size: 16px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.45);
+            line-height: 24px;
+            margin-bottom: 40px;
+        }
+
+        .qr-code {
+            display: flex;
+            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 50px;
+
+            .code {
+                background: #fafafa;
+                border-radius: 10px;
+                border: 2px solid #ffffff;
+                padding: 30px 30px 12px 30px;
+                cursor: pointer;
+
+                .code-pd10 {
+                    width: 140px;
+                    height: 140px;
+                    padding: 10px;
+                    background: #fff;
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    display: block;
+
+                    &:last-child {
+                        font-size: 16px;
+                        font-family: PingFangSC-Medium, PingFang SC;
+                        color: rgba(0, 0, 0, 0.85);
+                        line-height: 24px;
+                        font-weight: bold;
+                    }
+
+                    &:last-child {
+                        font-size: 12px;
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: rgba(0, 0, 0, 0.88);
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .app-con-right {
+        width: 410px;
+        height: 454px;
+        background: #fff;
+        background: url("../../assets/images/home/app-bg.png") no-repeat;
+        background-size: 100% 100%;
+    }
+}

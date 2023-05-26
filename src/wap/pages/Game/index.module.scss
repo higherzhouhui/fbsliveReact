@@ -1,0 +1,1076 @@
+@import "../../assets/style/index.scss";
+
+.skBody {
+  background: #fff;
+  padding: 12px;
+
+  .banner {
+    height: 144px;
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+.NoticeBar_bj {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.homeBody {
+  background: #fff;
+  width: 100%;
+  padding: 12px 12px 50px 12px;
+  flex: 1;
+  overflow-y: scroll;
+
+  // 提示
+  .NoticeBarDspl {
+    position: relative;
+    // display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+    // grid-gap: 13px;
+    .NoticeBarDspl_right {
+      top: 12px;
+      right: 0;
+      position: absolute;
+      min-width: 66.5px;
+      height: 18.5px;
+
+      display: flex;
+      align-items: center;
+
+      padding-left: 7px;
+      padding-right: 5.5px;
+
+      white-space: nowrap;
+      font-size: 10px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: #ffffff;
+      background: url("../../assets/image/game/zx/czjl.png");
+      background-size: 100% 100%;
+
+      img {
+        width: 12px;
+        height: 12px;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .live_3 {
+  }
+
+  // 真人
+  .live {
+    width: 100%;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+
+    // flex-wrap: wrap;
+    // grid-gap: 10px;
+    // column-count: 2;
+    // column-gap: 10px;
+    // display: flex;
+    // flex-wrap: wrap;
+    display: flex;
+    // align-items: center;
+    flex-wrap: wrap;
+    .rm_style {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 0;
+
+      background: url("../../assets/image/game/zx/rmbj.png") no-repeat;
+      background-size: 100% 100%;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      p {
+        margin-top: 4px;
+        text-align: center;
+        font-size: 10px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #363636;
+      }
+    }
+
+    .spaces {
+      width: 100% !important;
+      height: calc(111 / 375 * 100vw);
+      margin-bottom: 1px;
+      border-radius: 8px;
+
+      position: relative;
+
+      .sc {
+        width: 17px;
+        height: 16.5px;
+
+        position: absolute;
+        top: 12.5px;
+        right: 10px;
+      }
+
+      img {
+        width: 100%;
+        height: calc(111 / 375 * 100vw);
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .spaces_img {
+        width: 35.5px;
+        height: 35px;
+
+        position: absolute;
+        top: 4px;
+        left: 3.5px;
+
+        div {
+          font-size: 12px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: #ffffff;
+
+          white-space: nowrap;
+          transform: rotate(-45deg);
+        }
+      }
+
+      .name {
+        position: absolute;
+        top: 29px;
+        left: 23px;
+
+        font-size: 16px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #333333;
+      }
+
+      .name2 {
+        position: absolute;
+        top: 50px;
+        left: 24px;
+        font-size: 9px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #f38ca6;
+      }
+    }
+
+    .liveG {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 8px;
+    }
+
+    .liveG2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 8px;
+    }
+
+    .spaces2 {
+      // width: 30%;
+      // width: 30% !important;
+      height: 130px !important;
+      border-radius: 8px;
+
+      // margin-bottom: 8px;
+      // margin-right: 8px;
+      img {
+        width: 100% !important;
+        height: 130px !important;
+        border-radius: 8px;
+        object-fit: cover !important;
+      }
+    }
+
+    .space {
+      width: 48%;
+      position: relative;
+      border-radius: 10px;
+      margin-bottom: 10px;
+
+      .liveName {
+        display: inline-block;
+        line-height: 32px;
+        font-size: 18px;
+        font-family: Arial Black;
+        font-weight: 400;
+        color: #ffffff;
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        bottom: 9%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: calc(100% - 32px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .liveTitle {
+        height: 32px;
+        font-size: 10px;
+        font-weight: 400;
+        color: #ffffff;
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, -00%);
+        text-align: center;
+        width: calc(100%);
+        // white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .space2 {
+      width: 48%;
+      height: 140px;
+      position: relative;
+      border-radius: 10px;
+      margin-bottom: 10px;
+
+      .liveName {
+        display: inline-block;
+        line-height: 32px;
+        font-size: 18px;
+        font-family: Arial Black;
+        font-weight: 400;
+        color: #ffffff;
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        bottom: 15%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: calc(100% - 32px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .liveTitle {
+        height: 35px;
+        font-size: 10px;
+        font-weight: 400;
+        color: #ffffff;
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, -15%);
+        text-align: center;
+        width: calc(100%);
+        // white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .bgImg {
+        width: 100%;
+        height: 140px;
+      }
+    }
+
+    .space_3 {
+      width: 48%;
+      position: relative;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      margin-top: -15%;
+
+      .liveName {
+        display: inline-block;
+        line-height: 32px;
+        font-size: 18px;
+        font-family: Arial Black;
+        font-weight: 400;
+        color: #ffffff;
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: calc(100% - 32px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .liveTitle {
+        height: 35px;
+        font-size: 10px;
+        font-weight: 400;
+        color: #ffffff;
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, -00%);
+        text-align: center;
+        width: calc(100%);
+        // white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  // 体育
+  .sports {
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // background: rgba(255, 255, 255, 0.7);
+    // padding: 5px;
+    // border-radius: 10px;
+    grid-gap: 8px;
+
+    .space {
+      // position: relative;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // width: 100%;
+
+      // .sportsName {
+      //     position: absolute;
+      //     bottom: 89px;
+      //     right: 48px;
+      //     font-size: 27px;
+      //     color: #fefefe;
+      //     font-family: Arial Black;
+      // }
+      height: 111px;
+      border-radius: 8px;
+      width: 100%;
+
+      img {
+        height: 111px;
+        border-radius: 8px;
+        width: 100%;
+        object-fit: revert;
+      }
+    }
+
+    .space2 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calc(50% - 5px);
+
+      .sportsName {
+        position: absolute;
+        bottom: 20px;
+        right: 8px;
+        font-size: 27px;
+        font-family: Arial Black;
+      }
+    }
+  }
+
+  // 电子
+  .slots {
+    // background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0px 0 20px 0;
+
+    .space {
+      position: relative;
+      width: 30%;
+      margin-top: 8px;
+      margin-right: 8px;
+      background-image: url("../../assets/image/game/zx/yxlog.png");
+      background-size: 100% 100%;
+      height: 90px;
+      border-radius: 8px;
+      padding: 12px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .icon {
+        width: 44px;
+        height: 44px;
+        // position: absolute;
+        // left: 18px;
+
+        border-radius: 8px;
+      }
+
+      .slotsName {
+        // position: absolute;
+        width: 70px;
+        bottom: 48px;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 10px;
+        color: #333333;
+        overflow: hidden; //溢出隐藏
+        white-space: nowrap; //不换行
+        text-overflow: ellipsis; //显示...
+      }
+    }
+  }
+}
+
+.space2s {
+  // display: flex;
+  // align-items: center;
+
+  .space {
+    width: 100%;
+    height: 111px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+
+    img {
+      width: 100%;
+      height: 111px;
+      border-radius: 8px;
+      object-fit: revert;
+    }
+  }
+}
+
+.gameTop {
+  background: #fff;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.gameList {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  .banner {
+    // margin-top: 12px;
+    height: 144px;
+    width: 100%;
+    border-radius: 8px;
+
+    .bannerItem {
+      // padding: 6px;
+      // border-radius: 20px;
+      background: #fff;
+
+      .bannerImg {
+        height: 100%;
+        width: 100%;
+        // border-radius: 20px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .tips {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin: 20px 0 10px 15px;
+    // height: 45px;
+    // background: #fff;
+    // padding: 0 0 0 15px;
+    margin: 8px 0;
+  }
+
+  .tips2 {
+    // border-radius: 10px 10px 0 0;
+    // margin-top: -20px !important;
+    margin-top: 12px !important;
+    z-index: 5 !important;
+    position: relative !important;
+  }
+
+  .gNavName {
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    position: relative;
+
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     top: 7px;
+    //     left: -8px;
+    //     width: 2px;
+    //     height: 9px;
+    //     border-radius: 5px;
+    //     background-color: #ff758e;
+    // }
+  }
+
+  .all {
+    width: 70px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #5d5d5d;
+    // background: #fbfafc;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.gameTitle {
+  // margin: 17px 0 10px;
+  overflow: hidden;
+  position: relative;
+  padding-left: 10px;
+  color: #ccc;
+  font-size: 12px;
+  line-height: 1;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    border-radius: 1000px;
+    width: 2px;
+    height: 6px;
+    background: #eb457e;
+    position: absolute;
+    left: 5px;
+    bottom: 2px;
+  }
+}
+
+.gameIcon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.space {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.gameGrid {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.NoticeBar_qb {
+  width: 100%;
+  border-radius: 8px;
+  height: 58px;
+  margin: 10px 0;
+}
+
+.skBody_center {
+  display: grid;
+  grid-template-columns: 58px auto;
+  grid-gap: 4.5px;
+}
+
+.grid3_demo1 {
+  display: flex;
+  flex-direction: column;
+
+  .customSkeleton {
+    height: 58px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+  }
+}
+
+.customSkeleton {
+  width: 100%;
+  height: 108px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.transBody {
+  position: absolute;
+  background: #fff;
+  border-radius: 8px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 0;
+
+  .titleModal {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+
+  .tips {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .input {
+    background: #f5f5f5;
+    border-radius: 1000px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    margin: 0 20px 20px;
+    width: 100%;
+    width: calc(100% - 40px);
+    text-align: center;
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+
+    .submit {
+      color: $main;
+      background-color: transparent;
+      border: 0;
+      border-radius: 0;
+      border-top: 1px solid #f7f7f7;
+      height: 40px;
+
+      &:first-child {
+        border-right: 1px solid #f7f7f7;
+      }
+    }
+  }
+}
+
+.titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 16px;
+  background: #ff9fb0;
+  font-size: 18px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #1f1f1f;
+  height: 55px;
+
+  .titleleft {
+    display: flex;
+    align-items: center;
+
+    .titleImg {
+      width: 28.5px;
+      height: 28.5px;
+
+      margin-right: 6.5px;
+    }
+
+    .titleleft_size {
+      font-size: 12px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      img {
+        width: 59.5px;
+        height: 13px;
+        margin-bottom: 1px;
+      }
+    }
+  }
+
+  .NavBar_img {
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.gameInfo {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+
+  .infoL {
+    min-width: 40%;
+    .top {
+      margin-bottom: 14px;
+
+      .name {
+        margin-right: 5px;
+        white-space: nowrap;
+      }
+
+      .level {
+        height: 16px;
+      }
+    }
+  }
+
+  .infoR {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 13px;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        height: 44px;
+      }
+
+      .title {
+        line-height: 12px;
+
+        font-size: 12px;
+        font-family: PingFang SC;
+        font-weight: 600;
+        color: #333333;
+      }
+    }
+  }
+
+  .level {
+    height: 16px;
+  }
+
+  .vipDiv {
+    min-width: 41.5px;
+    height: 16px;
+
+    // background: #cbced7;
+    border-radius: 3px;
+
+    padding-left: 3px;
+    padding-right: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    font-family: Arial Black;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+
+    img {
+      width: 23px;
+      height: 8.5px;
+
+      margin-right: 3.5px;
+    }
+  }
+}
+
+.centent {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  // align-items: center;
+  // justify-content: space-between;
+  grid-gap: 8px;
+
+  .centent_left {
+    height: calc(100vh - 400px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .centent_left_2 {
+      padding: 10px 0 12px 0;
+      width: 78px !important;
+      height: 68px !important;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      background-image: url("../../assets/image/game/zx/leftwxz.png");
+      background-size: 100% 100%;
+      // box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.08);
+      border-radius: 8px;
+      // border: 1px solid;
+      // border-image: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(230, 230, 230, 1)) 1 1;
+
+      font-size: 12px;
+      font-family: ArialMT;
+      color: #333333;
+
+      div {
+        margin-top: 6px;
+      }
+    }
+
+    .centent_left_Check {
+      background-image: url("../../assets/image/game/zx/leftxz.png") !important;
+      background-size: 100% 100% !important;
+      font-size: 12px;
+      font-family: ArialMT;
+      color: #ffffff !important;
+    }
+  }
+
+  .centent_left::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+    display: none;
+    -webkit-appearance: none;
+  }
+}
+
+.centent_left_2_size {
+  white-space: nowrap !important;
+
+  animation: sport 6s infinite linear;
+  overflow: visible !important;
+}
+
+@keyframes sport {
+  0% {
+    transform: translate(100%, 0);
+  }
+
+  100% {
+    /* 父盒子宽度减去100% */
+    transform: translate(-200%, 0);
+  }
+}
+
+.inputBig {
+  position: relative;
+  margin-bottom: 8px;
+
+  img {
+    position: absolute;
+    top: 6px;
+    left: 3px;
+  }
+}
+
+.inputs {
+  width: 100%;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #f2f2f2;
+
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #cccccc;
+
+  padding-right: 15px;
+  padding-left: 35px;
+}
+
+@font-face {
+  font-family: dinNumber;
+  src: url(../../assets/font/DIN-number.ttf);
+}
+
+.moneys {
+  font-size: 19px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  font-family: "dinNumber";
+
+  img {
+    width: 14.5px;
+    height: 14.5px;
+    margin-left: 6.5px;
+  }
+}
+
+.centers {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.centers::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  display: none;
+  -webkit-appearance: none;
+}
+
+// 新游戏菜单栏
+.container {
+  height: calc(100% - 260px);
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  // align-items: center;
+  // justify-content: space-between;
+  grid-gap: 4.5px;
+}
+
+.side {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.side::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  display: none;
+  -webkit-appearance: none;
+}
+
+.main {
+  // flex: auto;
+  // padding-left: 8px;
+
+  height: calc(100vh - 400px);
+  overflow-y: scroll;
+
+  h2 {
+    margin: 0;
+    padding: 12px 0;
+  }
+}
+
+.main::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  display: none;
+  -webkit-appearance: none;
+}
+
+:global {
+  .adm-side-bar {
+    --width: 58px;
+    --background-color: 0 !important;
+  }
+
+  .adm-side-bar-item {
+    padding: 0;
+    width: 58px;
+    height: 62.5px;
+    // background: 0 !important;
+    background-image: url("../../assets/image/game/zx/leftwxz.png");
+    background-size: 100% 100%;
+
+    font-size: 12px;
+    font-family: ArialMT;
+    color: #fc708b;
+  }
+
+  .adm-side-bar::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+    display: none;
+    -webkit-appearance: none;
+  }
+
+  .adm-side-bar-item-active {
+    width: 58px;
+    height: 62.5px;
+    background-image: url("../../assets/image/game/zx/leftxz.png") !important;
+    background-size: 100% 100% !important;
+    font-size: 12px;
+    font-family: ArialMT;
+    color: #ffffff !important;
+    // background-color: #f5f5f5 !important;
+  }
+
+  // 去除游戏菜单栏多余残留
+  .adm-side-bar-item-corner {
+    right: 1000000000000000000px;
+  }
+}
+
+.centent_left_2 {
+  // padding: 10px 0 12px 0;
+  width: 58px !important;
+  height: 100% !important;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  // background-image: url("../../assets/image/game/zx/leftwxz.png");
+  // background-size: 100% 100%;
+  // box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.08);
+  border-radius: 8px;
+  // border: 1px solid;
+  // border-image: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(230, 230, 230, 1)) 1 1;
+
+  // div {
+  //     margin-top: 6.5px;
+
+  //     text-align: center;
+  //     // font-size: 10px;
+  //     // font-family: PingFang SC;
+  //     // font-weight: 400;
+  //     // color: #FC708B;
+  // }
+}
+
+.syrm_img {
+  width: 19.5px !important;
+  height: 27px !important;
+
+  position: absolute;
+  top: 6px;
+  right: 7.5px;
+}
+
+.gameBody {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow-y: scroll;
+}

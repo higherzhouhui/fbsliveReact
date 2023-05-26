@@ -1,0 +1,41 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  background: rgba($color: #000000, $alpha: 0.3);
+  .text {
+    // background: rgba($color: #000000, $alpha: 0.5);
+    border-radius: 100px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 10px;
+    width: 52px;
+    margin-top: -10px;
+  }
+}
+
+.box_h {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  .text {
+    border-radius: 100px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 10px;
+    min-width: 32px;
+    white-space: nowrap;
+    margin-top: -10px;
+  }
+}
+.hide {
+  display: none;
+}

@@ -1,0 +1,178 @@
+@import "../../../assets/style/index.scss";
+.inlet {
+    position: fixed;
+    right: 10px;
+    bottom: 124px;
+
+    img {
+        width: 56px;
+        height: 70px;
+    }
+}
+.wbg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+.bodys {
+    width: 100vw;
+    height: 100vh;
+    background: #f5f4fe;
+
+    padding-top: 45px;
+    padding-bottom: 80px;
+
+    .content {
+        width: 100%;
+        height: calc(100% - 48px);
+        padding-top: 10px;
+
+        .content_tops {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            gap: 17px;
+
+            overflow-x: scroll;
+            overflow-y: hidden;
+
+            padding: 0 12px 12px;
+
+            .box {
+                // display: inline-block !important;
+                width: 48px;
+                height: 48px;
+                border-radius: 100%;
+                background: #fff;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                position: relative;
+                .lives {
+                    position: absolute;
+                    bottom: -5px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+
+                    width: 42px;
+                    height: 14px;
+                    background: #fc708b;
+                    border-radius: 2px;
+
+                    display: grid;
+                    align-items: center;
+                    grid-template-columns: 15px auto;
+
+                    img {
+                        width: 15px;
+                        height: 10px;
+                    }
+                    .fonts {
+                        font-size: 9px;
+                        color: #fff;
+                        font-weight: normal;
+                        white-space: nowrap;
+                        // display: "table"
+                        overflow: hidden;
+
+                        .gd_font {
+                            animation: sport 5s infinite linear;
+                        }
+                        @keyframes sport {
+                            0% {
+                                transform: translate(100%, 0);
+                            }
+                            100% {
+                                /* 父盒子宽度减去100% */
+                                transform: translate(-200%, 0);
+                            }
+                        }
+                    }
+                }
+            }
+            .box_zb {
+                border: 1px solid #fc708b;
+            }
+
+            &::-webkit-scrollbar {
+                width: 0px;
+                height: 0px;
+            }
+        }
+        .box_imgs {
+            width: 100%;
+            height: 100%;
+
+            padding: 0 14px 8px;
+            .box_imgs_Swiper {
+                width: 100%;
+                height: 100%;
+            }
+            .box2_demo {
+                width: 100%;
+                height: 100%;
+                // background: #ebd40d;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .box_imgs2 {
+            padding: 0 0px 8px;
+        }
+    }
+    .bottoms2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        gap: 0px !important;
+    }
+    .bottoms {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+
+        width: 100%;
+        height: 80px;
+        padding: 9px 12px;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        // align-items: center;
+
+        background: #ffffff;
+
+        .but {
+            height: 40px;
+            border-radius: 4px;
+            border: 1px solid #fc708b;
+
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #fc708b;
+        }
+        .but2 {
+            background: #fc708b;
+            color: #ffffff;
+
+            border: none !important;
+        }
+        .but3 {
+            background: #d8d8d8 !important;
+            border-radius: 4px;
+
+            border: none !important;
+
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #333333 !important;
+        }
+    }
+}

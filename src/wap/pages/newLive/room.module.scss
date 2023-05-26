@@ -1,0 +1,110 @@
+@import "../../assets/style/index.scss";
+
+.jswebrtc {
+  height: 100vh;
+}
+
+.sportLiveRoom {
+  color: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+
+.liveRoom {
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  // background: url(../../assets/image/live/lk/lkbj2.jpg) no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+
+    // background: rgba(51, 51, 51, 0.8) !important;
+    // backdrop-filter: blur(27px) !important;
+    // backdrop-filter: blur(2px) !important;
+  }
+  .liveRoom_imgBj {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    background: rgba(51, 51, 51, 0.8) !important;
+    backdrop-filter: blur(2px) !important;
+  }
+}
+// 横屏
+.liveRoom_h {
+  color: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100vh;
+  height: 100vw;
+  overflow: hidden;
+  // background: url(../../assets/image/live/lk/lkbj2.jpg) no-repeat;
+  // background-size: cover;
+  // background-position: center;
+
+  -webkit-transform: rotate(90deg) !important;
+  -moz-transform: rotate(90deg) !important;
+  -ms-transform: rotate(90deg) !important;
+
+  transform: translate(-50%, -50%) rotate(90deg) !important;
+}
+
+.liveList {
+  padding-bottom: 15px;
+}
+
+.red {
+  color: $main;
+  margin: 0 4px;
+}
+
+.manBody {
+  background: #fff;
+}
+
+#playIcon {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  z-index: 10000;
+}
+
+.wheelIcon {
+  position: fixed;
+  right: 15px;
+  top: 120px;
+  width: 35px;
+  height: 35px;
+  padding: 3px;
+  background: rgba($color: #000, $alpha: 0.4);
+  border-radius: 4px;
+}

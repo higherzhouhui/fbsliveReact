@@ -1,0 +1,215 @@
+.status-img {
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+    background-position: center right;
+}
+
+.fb-reward-container {
+    position: relative;
+
+    &-tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 0 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 8px;
+
+        .tabs {
+            font-size: 16px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.45);
+            line-height: 16px;
+            display: flex;
+
+            &:nth-child(2) {
+                margin-left: 32px;
+            }
+
+            &.active {
+                color: rgba(255, 255, 255, 0.85);
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    height: 2px;
+                    background: #FFFFFF;
+                    border-radius: 1px;
+                    left: 50%;
+                    bottom: -8px;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+    &-alert {
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+
+
+        .back-icon {
+            position: absolute;
+            left: 11px;
+            cursor: pointer;
+        }
+
+        .amount-value {
+            font-weight: 600;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .bet-amount {
+            padding: 0 10px;
+            color: #fff;
+            line-height: 40px;
+            border-top: 1px solid rgba(255, 255, 255, .1);
+        }
+
+        .ant-collapse-expand-icon {
+            color: #fff;
+            position: absolute;
+            right: 2px;
+            bottom: 35px;
+            font-size: 12px;
+
+            svg {
+                height: 8px;
+            }
+        }
+
+        .ant-collapse-content {
+            color: rgba(255, 255, 255, 0.5000);
+            background-color: unset;
+            border-top: unset;
+            text-align: left;
+        }
+
+        .ant-collapse-content-box {
+            padding: 10px;
+            background: #3e3f46;
+        }
+
+
+        .ant-collapse {
+            background-color: unset;
+            border: unset;
+
+            .ant-collapse-item {
+                border-bottom: unset;
+                margin-bottom: 8px;
+                position: relative;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .ant-collapse-header {
+                    display: block;
+                    padding: 0;
+                }
+
+                .ant-collapse-arrow {
+                    position: absolute;
+                    right: 0px;
+                    bottom: 10px;
+                    z-index: 1;
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &-goback {
+        position: absolute;
+        left: 15px;
+        top: 5px;
+        cursor: pointer;
+    }
+}
+
+.award-result-item {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background: #4E4F57;
+    margin-bottom: 8px;
+    cursor: pointer;
+    padding: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4px;
+
+        .left {
+            .orderNum {
+                margin-right: 12px;
+            }
+
+            .icon-copy1 {
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                cursor: pointer;
+            }
+        }
+
+        .right {
+            .green {
+                background: rgba(26, 251, 104, .2);
+                border-radius: 4px;
+                padding: 2px 8px;
+            }
+        }
+    }
+
+    .timer {
+        text-align: left;
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.25);
+        line-height: 12px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .bottom {
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.45);
+        line-height: 14px;
+
+        .bet-amount {
+            margin: 0 10px;
+            color: #fff;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .amount-value {
+            font-weight: 600;
+            color: #fff;
+            font-size: 14px;
+            margin-right: 24px;
+        }
+    }
+}

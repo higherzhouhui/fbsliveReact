@@ -1,0 +1,91 @@
+.container {
+    padding-top: 80px;
+    background: #FFEEF1;
+    min-height: 100vh;
+    padding-bottom: 60px;
+    .banner {
+        width: 100%;
+        padding-bottom: 36.5%;
+        position: relative;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+    }
+    .main {
+        width: 1200px;
+        margin: -32px auto 0 auto;
+        .hintContainer {
+            width: 100%;
+            background-image: url('../../assets/images/activity/titleBg.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            padding: 18px 20px;
+            margin-bottom: 25px;
+            .title {
+                font-size: 24px;
+                font-family: PingFangSC-Semibold, PingFang SC;
+                font-weight: 600;
+                color: #333333;
+                line-height: 33px;
+                text-align: left;
+                position: relative;
+                padding: 0 0 0 12px;
+                &::before {
+                    width: 4px;
+                    height: 12px;
+                    background: #FFFFFF;
+                    border-radius: 2px;
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+            }
+            .divide {
+                margin: 15px 0 20px 0;
+                width: 100%;
+                height: 1px;
+                background: #fff;
+            }
+            .desc {
+                text-align: left;
+                color: #333;
+                font-size: 14px;
+                line-height: 28px;
+            }
+            .redBag {
+                position: absolute;
+                width: 86px;
+                height: 77px;
+                right: 20px;
+                bottom: 0;
+            }
+        }
+        .tableContainer {
+            background-image: url('../../assets/images/activity/tableBg.png');
+            .table {
+                border-radius: 20px;
+                border: 1px solid #cd312c;
+                overflow: hidden;
+            }
+        }
+        .columnClass:nth-child(odd) {
+            background: rgb(254, 244, 248);
+        }
+        .quyContainer {
+            background-image: url('../../assets/images/activity/quyBg.png');
+            .redBag {
+                top: 50%;
+                left: 0;
+                transform: translate(-70px, -40%);
+                z-index: 1;
+            }
+        }
+    }
+}

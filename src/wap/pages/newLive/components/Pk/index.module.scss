@@ -1,0 +1,102 @@
+.pkStatus {
+  position: fixed;
+  left: 0;
+  top: 100vw;
+  height: calc(100vh - 100vw);
+  width: 100vw;
+
+  .progress {
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+
+    .self {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 15px;
+    }
+
+    .other {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+    }
+  }
+
+  .pkTime {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    height: 20px;
+    padding: 0 10px;
+    background: rgba($color: #000, $alpha: 0.2);
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .statusImg {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    justify-content: space-between;
+    padding: 0 20px;
+
+    & > div {
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      height: 20px;
+      object-fit: contain;
+    }
+
+    .chenfa {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.pkGroup {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px 0;
+  gap: 5px;
+
+  .headImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+  }
+
+  .side {
+    width: calc(50% - 40px);
+    overflow: hidden;
+    height: 90px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .pkicon {
+    width: 30px;
+    object-fit: contain;
+    padding: 10px 0;
+  }
+
+  .left {
+    justify-content: flex-end;
+  }
+}

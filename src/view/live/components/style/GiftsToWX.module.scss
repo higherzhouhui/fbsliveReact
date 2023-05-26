@@ -1,0 +1,230 @@
+@import "../../../../wap/assets/style/index.scss";
+
+// 获取主播wx
+.GiftsToWX {
+
+    // position: absolute;
+    // left: 10px;
+    // top: 10px;
+    .title_img {
+        width: 50px;
+        cursor: pointer;
+    }
+}
+
+
+.GiftsToWX_center {
+    width: 289px;
+    height: 455px;
+    background: url("../../../../assets/images/live/gwx/tclog.png");
+    background-size: 100% 100%;
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+
+    .GiftsToWX_center_sc {
+        position: absolute;
+        top: 0px;
+        right: 8.5px;
+        width: 30px;
+        height: 30px;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    }
+
+    .GiftsToWX_Avatar {
+        position: absolute;
+        top: 86px;
+        left: 99px;
+    }
+
+    .GiftsToWX_name {
+        position: absolute;
+        top: 160px;
+        left: 46%;
+        transform: translate(-50%, 0);
+        font-size: 16px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #333333;
+        white-space: nowrap;
+    }
+
+    .GiftsToWX_qm {
+        position: absolute;
+        top: 190px;
+        left: 47%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #999999;
+        line-height: 14px;
+        width: calc(100% - 65px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 28px;
+    }
+
+    .GiftsToWX_information {
+        width: calc(100% - 18px);
+        position: absolute;
+        top: 239px;
+        left: 18px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #333333;
+
+        div {
+            margin-left: 10px;
+        }
+
+        .contactInfo {
+            width: 110px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: left;
+        }
+
+        .GiftsToWX_information_but {
+            min-width: 64px;
+            height: 30px;
+            background: #ffffff;
+            border-radius: 15px;
+
+            border: none;
+
+            font-size: 14px;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #FC708B;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: absolute;
+            top: 0;
+            right: 38px;
+        }
+    }
+
+    .GiftsToWX_mpjd {
+        position: absolute;
+        bottom: 130px;
+        left: 45%;
+        transform: translate(-50%, 0);
+
+        font-size: 14px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #333333;
+        white-space: nowrap;
+    }
+
+    .GiftsToWX_zs {
+        position: absolute;
+        bottom: 107px;
+        left: 45%;
+        transform: translate(-50%, 0);
+
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #999999;
+        white-space: nowrap;
+    }
+
+    .GiftsToWX_ProgressBar {
+        position: absolute;
+        bottom: 86px;
+        left: 45%;
+        transform: translate(-50%, 0);
+
+        .GiftsToWX_ProgressBar_div {
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #999;
+
+            margin-top: 1px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .GiftsToWX_appoint {
+        position: absolute;
+        left: 30px;
+        bottom: 90px;
+        width: calc(100% - 75px);
+        height: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+
+        .divs {
+            margin-left: 10px;
+            width: 80%;
+            text-align: left;
+        }
+
+        .GiftsToWX_appoint_right {
+            display: flex;
+            flex-direction: column;
+
+            .lx {
+                font-size: 12px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #999999;
+                margin-top: 8px;
+            }
+        }
+
+        .getAnchorCardD_gname {
+            width: 160px;
+            line-height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .GiftsToWX_appoint_img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .GiftsToWX_bottom_size {
+        position: absolute;
+        bottom: 28px;
+        left: 45%;
+        transform: translate(-50%, 0);
+
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #666666;
+
+        line-height: 17px;
+
+        text-align: left;
+
+        white-space: nowrap;
+    }
+}

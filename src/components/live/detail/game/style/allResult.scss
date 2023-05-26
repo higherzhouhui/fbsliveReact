@@ -1,0 +1,217 @@
+// .reward-result-box-left {
+//     .s-btn {
+//         padding: 0 13px;
+//         height: 22px;
+//         line-height: 22px;
+//         border-radius: 11px 0 0 11px;
+//         background-color: #f5f5f5;
+//         color: #666666;
+//         font-size: 14px;
+//         cursor: pointer;
+//         &:hover {
+//             background-color: #e9e9e9;
+//         }
+//     }
+
+//     &-alert {
+//         border-radius: 8px;
+//         z-index: 3;
+//         .lottery-name {
+//             position: absolute;
+//             left: 50%;
+//             top: 13px;
+//             transform: translateX(-50%);
+//             font-size: 16px;
+//             font-weight: 600;
+//             color: #fff;
+//         }
+//         width: 420px;
+//         .all-history-box2 {
+//             margin-top: 50px;
+//             padding: 10;
+//             width: 400px;
+//             height: 540px;
+//             overflow-y: auto;
+//             min-height: 200px;
+
+//             img {
+//                 margin-top: 10px;
+//                 margin-right: 10px;
+//                 width: 30px;
+//                 height: 30px;
+//             }
+
+//             .text-icon {
+//                 margin-top: 10px;
+//                 margin-right: 10px;
+
+//                 min-width: 30px;
+//                 padding: 0 2px;
+//                 display: table;
+
+//                 height: 30px;
+//                 border-radius: 4px;
+//                 line-height: 30px;
+//                 // background-color: #FF9090;
+//                 background-color: #fff;
+//                 color: #02bc42;
+//                 text-align: center;
+//                 &.lhc {
+//                     &:last-child {
+//                         position: relative;
+//                         margin-left: 10px;
+//                         &::before {
+//                             content: "+";
+//                             left: -14px;
+//                             position: absolute;
+//                         }
+//                     }
+//                 }
+//             }
+//             &-item {
+//                 text-align: left;
+//                 padding-bottom: 20px;
+//                 margin-bottom: 20px;
+//                 border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+//                 color: rgba(255, 255, 255, 0.5);
+//                 font-size: 14px;
+//             }
+//         }
+//         .close {
+//             position: absolute;
+//             right: 10px;
+//             top: 11px;
+//             cursor: pointer;
+//         }
+
+//         .back-icon {
+//             position: absolute;
+//             left: 11px;
+//             cursor: pointer;
+//         }
+
+//         padding: 14px 10px;
+//         position: absolute;
+//         background-color: rgba(51, 51, 51, 0.9);
+//         left: 0;
+//         bottom: 100px;
+//         height: 628px;
+
+//         .record-name {
+//             margin-bottom: 20px;
+//             text-align: left;
+//             font-weight: 600;
+//             color: #ffffff;
+//             font-size: 16px;
+//         }
+
+//         &-list {
+//             margin-top: 50px;
+//             color: #fff;
+
+//             div {
+//                 padding: 0 px;
+//                 height: 45px;
+//                 line-height: 45px;
+//                 font-size: 14px;
+//                 color: rgba(255, 255, 255, 0.5);
+
+//                 .value {
+//                     color: #fff;
+
+//                     img {
+//                         margin-top: 7.5px;
+//                         width: 30px;
+//                         height: 30px;
+//                         margin-left: 10px;
+//                     }
+
+//                     .icon {
+//                         margin-top: 7.5px;
+//                         width: 30px;
+//                         height: 30px;
+//                         line-height: 30px;
+//                         margin-left: 5px;
+//                         font-size: 16px;
+//                         text-align: center;
+//                         color: #fff;
+//                         border-radius: 4px;
+//                         font-weight: 600;
+//                         background: #ff9090;
+//                     }
+//                 }
+
+//                 border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+//             }
+//         }
+//     }
+// }
+
+// .award-result-item {
+//     position: relative;
+//     padding: 20px 0;
+//     border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+//     color: #fff;
+//     text-align: center;
+//     cursor: pointer;
+//     .icon {
+//         margin-right: 5px;
+//         width: 30px;
+//         height: 30px;
+//         border-radius: 4px;
+//     }
+
+//     .item {
+//         margin-right: 5px;
+//         min-width: 30px;
+//         height: 30px;
+//         line-height: 30px;
+//         border-radius: 4px;
+//         color: #fff;
+//         background-color: #fd909b;
+//         font-weight: 600;
+//         font-size: 16px;
+//         text-align: center;
+//         &.lhc {
+//             &:last-child {
+//                 position: relative;
+//                 margin-left: 10px;
+//                 &::before {
+//                     content: "+";
+//                     left: -12px;
+//                     position: absolute;
+//                 }
+//             }
+//         }
+//     }
+
+//     .timer {
+//         color: rgba(255, 255, 255, 0.5);
+//     }
+
+//     .xjt-icon {
+//         position: absolute;
+//         right: 10px;
+//         top: 50%;
+//         transform: translateY(-50%);
+//     }
+
+//     .b-t-i {
+//         margin-top: 27px;
+//         color: rgba(255, 255, 255, 0.5);
+//         font-size: 12px;
+
+//         .value {
+//             margin-left: 10px;
+//             font-weight: 600;
+//             color: #02bc42;
+//             font-size: 20px;
+//         }
+//     }
+
+//     .result-img {
+//         position: absolute;
+//         right: 40px;
+//         bottom: 0;
+//     }
+// }

@@ -1,0 +1,67 @@
+@import '../../assets/style/theme';
+
+.group-user {
+    background-color: #fff;
+    min-width: 230px;
+    padding: 12px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+    transition: 0.3s, width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+
+    .item-content {
+        text-align: center;
+
+        .link-item {
+            width: 100%;
+            height: 56px;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 30px;
+            cursor: pointer;
+
+            .link-img {
+                display: block;
+                height: 24px;
+                margin-right: 10px;
+            }
+
+            .link-name {
+                font-size: 16px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.88);
+                line-height: 24px;
+            }
+            &.active,
+            &:hover {
+                .link-name {
+                    color: $primary;
+                }
+                .link-img path {
+                    fill: #fc708b;
+                }
+            }
+        }
+
+        .login-out {
+            cursor: pointer;
+            margin: 12px 0;
+            font-size: 16px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 24px;
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid #CACACA;
+            padding: 13px 54px;
+
+            &:hover {
+                color: $primary;
+                border: 1px solid $primary;
+            }
+        }
+    }
+}

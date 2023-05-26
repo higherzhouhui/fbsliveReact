@@ -1,0 +1,123 @@
+.min-title {
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.88);
+    line-height: 20px;
+    text-align: left;
+}
+
+// 存款，转账，取款的input金额及密码样式
+.ant-input-number-group-addon {
+    border-radius: 0 10px 10px 0;
+}
+
+.ant-input-number-input,
+.ant-input-number,
+.ant-input-number-input-wrap {
+    height: 50px;
+    border-radius: 10px;
+}
+
+.money-input {
+    width: 450px;
+    height: 50px;
+
+    .ant-input-number-group-addon,
+    .ant-input-group-addon {
+        background: transparent;
+
+        .cursor {
+            color: #000000;
+        }
+    }
+
+    .ant-input-number-input-wrap {
+        height: 48px;
+        border: none;
+    }
+}
+
+// 一般的input,select样式
+.ant-picker-range .ant-picker-active-bar {
+    background: #ff839b;
+}
+
+.ant-input-password input {
+    // height: 28px;
+}
+
+.ant-picker-focused,
+.ant-input,
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    height: 36px;
+    box-shadow: none;
+
+}
+
+.ant-select-single .ant-select-selector .ant-select-selection-item,
+.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+    line-height: 36px;
+}
+
+.ant-form-item-explain-error {
+    text-align: left;
+}
+
+
+.drawer-body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+    &.show {
+        opacity: 1;
+    }
+
+    &.hide {
+        opacity: 0;
+    }
+}
+
+.tabs {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10px;
+    .tab {
+        min-width: 110px;
+        line-height: 36px;
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.88);
+        line-height: 14px;
+        padding: 10px 10px;
+        flex: 1;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:first-child{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        &:last-child{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        &.active,
+        &:hover{
+            border: 1px solid #FC708B;
+            cursor: pointer;
+            color: #FC708B;
+        }
+    }
+}

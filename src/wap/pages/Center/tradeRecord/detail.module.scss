@@ -1,0 +1,79 @@
+@import '../../../assets/style/index.scss';
+
+.gbg {
+    min-height: 100vh;
+    background-color: #fff;
+    position: relative;
+
+    // padding: 16px;
+    // box-sizing: border-box;
+    .successLogo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 60px auto 32px;
+    }
+
+    .money {
+        height: 24px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 24px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .tips,
+    .date {
+        height: 12px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #999999;
+        line-height: 12px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .list {
+        margin-top: 48px;
+
+        .item {
+            color: #999;
+        }
+
+        .adm-list-item-content-extra {
+            color: red !important;
+        }
+    }
+
+    .kefu {
+        position: absolute;
+        bottom: 72px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #00BE40;
+        font-size: 12px;
+    }
+}
+
+.pl6 {
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.orderNo {
+    @extend .disFlex;
+
+    .onum {
+        max-width: 60vw;
+        word-break: break-all;
+    }
+
+    img {
+        filter: brightness(0.8);
+        width: 13px;
+        height: 13px;
+        margin-left: 5px;
+    }
+}

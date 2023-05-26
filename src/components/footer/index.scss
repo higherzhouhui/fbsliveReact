@@ -1,0 +1,105 @@
+@import "../../assets/style/_theme.scss";
+@import "../../assets/sprite/sprite.css";
+.container-footer {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img-tabs {
+        width: 100%;
+        padding: 25px 0;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+
+        .tabs-icon {
+            margin-right: 50px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .nav-list {
+        margin: 25px auto 44px;
+
+        .item {
+            font-size: 16px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.88);
+            line-height: 24px;
+            margin-right: 40px;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+                color: $primary;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 16px;
+                width: 1px;
+                background: #000;
+                display: block;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -20px;
+            }
+
+            &:last-child {
+                &::after {
+                    height: 0;
+                }
+            }
+        }
+    }
+    .nav-image-list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+        padding-bottom: 24px;
+        padding-top: 24px;
+        .nav-image {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 50px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .nav-item-icon {
+                height: 30px;
+                margin-right: 8px;
+                min-width: 30px;
+            }
+
+            .nav-item-title {
+                text-align: left;
+                max-width: 150px;
+                font-size: 12px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.88);
+                line-height: 12px;
+            }
+        }
+    }
+    .footer-tips {
+        text-align: center;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(0,0,0,0.25);
+        line-height: 12px;
+        margin: 12px auto 24px;
+        padding: 0 200px;
+    }
+}

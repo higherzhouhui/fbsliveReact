@@ -1,0 +1,351 @@
+$main: #FC708B;
+
+.betGame {
+    position: relative;
+    .disFlex {
+        display: flex;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        background: rgba($color: #000000, $alpha: 0.2);
+        border-radius: 100px;
+
+        .box {
+            min-width: 80px;
+            line-height: 22px;
+            padding: 9px 0;
+            font-size: 14px;
+            text-align: center;
+            color: rgba($color: #fff, $alpha: 0.7);
+            padding: 0 10px;
+            cursor: pointer;
+
+            &.active {
+                background: #FC708B;
+                border-radius: 100px;
+                color: #fff;
+            }
+        }
+    }
+
+    .typeName {
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .game6Type {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 6px;
+
+        .box {
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            background: #646464;
+            color: #999;
+            cursor: pointer;
+            font-size: 13px;
+            min-width: 80px;
+            border-radius: 1000px;
+
+            &.active {
+                background: #FC708B;
+                color: #fff;
+            }
+        }
+    }
+
+    .lottery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        height: 180px;
+        align-items: center;
+        margin-top: 10px;
+
+        &[data-layout="4"] {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &[data-layout="5"] {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        &[data-layout="10"] {
+            grid-template-columns: repeat(10, 1fr);
+        }
+
+        &[data-layout="20"] {
+            grid-template-columns: repeat(20, 1fr);
+            align-items: flex-start;
+            overflow-y: scroll;
+        }
+
+        &.sel6Num {
+            height: unset;
+        }
+
+        .box {
+            font-size: 12px;
+
+            .wrf {
+                width: 30px;
+                height: 30px;
+                color: $main;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                cursor: pointer;
+                padding: 1px;
+                background: url(../../../../../assets/images/game/number-select.png) no-repeat;
+                background-size: 100% 100%;
+            }
+
+            .img {
+                display: flex;
+                border: 3px solid transparent;
+                border-radius: 8px;
+                margin-bottom: 5px;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+
+            display: flex;
+            flex-direction: column;
+
+            &.active {
+                .img {
+                    border: 3px solid #FF5E86;
+                }
+
+                .wrf {
+                    background: url(../../../../../assets/images/game/number-selected.png) no-repeat;
+                    background-size: 100% 100%;
+                    border: 0;
+                    color: #fff;
+                }
+            }
+        }
+
+        &.small {
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0px;
+
+            .box {
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}
+
+.roundNumber {
+    padding: 16px 12px;
+
+    .roundTitle {
+        font-size: 13px;
+        color: #fff;
+        text-align: left;
+    }
+
+    .roundType {
+        margin: 16px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr auto;
+        grid-column-gap: 6px;
+
+        .box {
+            background: #646464;
+            color: #fff;
+            font-size: 12px;
+            height: 26px;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 8px;
+            line-height: 26px;
+            min-width: 80px;
+        }
+
+        .active {
+            background: #EB448F;
+            color: #fff;
+        }
+    }
+
+    .roundContent {
+        background: rgba($color: $main, $alpha: 0.1);
+        height: 60px;
+        border: 1px solid #EFE7FF;
+        border-radius: 6px;
+        resize: none;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 16px;
+    }
+}
+
+.btiTitle {
+    text-align: left;
+}
+
+.btiPer {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    gap: 10px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+
+    &.outSetBtiPer {
+        margin: 10px 0 0;
+    }
+
+    .box {
+        border-radius: 8px;
+        background: #646464;
+        border-radius: 1000px;
+        cursor: pointer;
+    }
+
+    .active {
+        background: #fff;
+        color: $main;
+    }
+}
+
+.gameScroll {
+    height: 180px;
+    overflow-y: scroll;
+}
+
+.btiWindow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 340px;
+    padding: 10px;
+    border-radius: 10px;
+
+    &_title {
+        line-height: 36px;
+        color: #333;
+        font-size: 16px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &_box {
+        height: 44px;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    &_label {
+        color: #666;
+    }
+
+    &_value {
+        color: #333;
+    }
+
+    &_btn {
+        margin-top: 30px;
+        background: #FC708B;
+        line-height: 36px;
+        border-radius: 1000px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.lotterResult {
+    background: rgba($color: #000000, $alpha: 0.5);
+    padding: 0 18px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+    .lotterList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .lotteryTitle {
+        color: #fff;
+        font-size: 18px;
+        padding: 30px 0 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .lotteryRow {
+        display: flex;
+        align-items: center;
+
+        .box {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-size: 15px;
+            margin: 5px 0;
+
+            .LotteryNumIcon {
+                margin-right: 8px;
+            }
+        }
+
+        &[data-lay="1"] {
+            width: 25%;
+        }
+
+        &[data-lay="2"],
+        &[data-lay="3"] {
+            width: 50%;
+
+            .box {
+                display: grid;
+                grid-template-columns: 32px 1fr 1fr 1fr;
+                grid-column-gap: 8px;
+            }
+        }
+
+        &[data-lay="7"] {
+            width: 100%;
+
+            .box {
+                display: grid;
+                grid-template-columns: 32px 1fr 1fr 1fr 1fr;
+                grid-gap: 8px;
+                flex-grow: wrap;
+
+                .span:nth-child(6) {
+                    grid-column: 2/3;
+                }
+            }
+        }
+    }
+}

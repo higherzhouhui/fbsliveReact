@@ -1,0 +1,27 @@
+.ballBox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+
+    .span {
+        width: 21px;
+        height: 21px;
+        min-width: 21px;
+        display: inline-block;
+        background: url(../../../../assets/image/sclog/wball.png) no-repeat;
+        background-size: 100%;
+
+        &.red {
+            background: url(../../../../assets/image/sclog/rball.png) no-repeat;
+            background-size: 100%;
+        }
+    }
+}
+
+[data-layout="4"].ballBox {
+    .span {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+    }
+}

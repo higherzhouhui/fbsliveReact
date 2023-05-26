@@ -1,0 +1,209 @@
+.container {
+    padding-top: 80px;
+    background: rgb(223, 132, 117);
+    min-height: 100vh;
+    padding-bottom: 60px;
+    .banner {
+        width: 100%;
+        padding-bottom: 45.5%;
+        position: relative;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+    }
+    .main {
+        width: 1200px;
+        margin: 0 auto 0 auto;
+        .hintContainer {
+            width: 100%;
+            background: #fff;
+            border: 3px solid rgb(239,189,175);
+            border-radius: 18px;
+            position: relative;
+            padding: 18px 20px;
+            margin-bottom: 25px;
+            .title {
+                font-size: 24px;
+                font-family: PingFangSC-Semibold, PingFang SC;
+                font-weight: 600;
+                color: #fff;
+                text-align: center;
+                background-image: url('../../assets/images/activity/stitleBg.png');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                width: 420px;
+                height: 55px;
+                line-height: 55px;
+                margin: -18px auto 0 auto;
+            }
+            .subTitle {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .left {
+                    font-size: 22px;
+                    font-family: PingFang SC;
+                    color: #333333;
+                    .question {
+                        border: 1px solid #F38A79;
+                        color: #F38A79;
+                        border-radius: 50%;
+                        background: #fff;
+                        width: 25px;
+                        height: 25px;
+                        text-align: center;
+                        line-height: 25px;
+                        display: inline-block;
+                        margin-left: 12px;
+                        cursor: pointer;
+                    }
+                }
+                .right {
+                    font-size: 22px;
+                    color: #333333;
+                }
+            }
+            .downTimeContainer {
+                font-size: 18px;
+                font-weight: 400;
+                margin-top: 18px;
+                color: #999;
+            }
+            .taskItem {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 90px;
+                background: #F6F2F2;
+                border-radius: 12px;
+                margin-top: 18px;
+                padding: 0 20px;
+                .left {
+                    font-size: 22px;
+                    font-family: PingFang SC;
+                    font-weight: 400;
+                    color: #666666;
+                }
+                .right {
+                    background-image: url('../../assets/images/activity/btnBg.png');
+                    height: 75px;
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    color: #fff;
+                    font-size: 22px;
+                    margin-top: 8px;
+                    cursor: pointer;
+                    padding: 14px 50px 0 50px;
+                }
+                .doneActive {
+                    background: #D5D5D5;
+                    border-radius: 50px;
+                    height: 50px;
+                    padding-top: 0;
+                    line-height: 50px;
+                    padding: 0 50px 0 50px;
+                }
+            }
+            .resultContainer {
+                background: #F6F2F2;
+                border-radius: 8px;
+                padding: 16px 0 8px 16px;
+                display: flex;
+                margin: 25px 0 18px 0;
+                .number {
+                    background-image: url('../../assets/images/activity/numberBg.png');
+                    width: 80px;
+                    height: 80px;
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    font-size: 32px;
+                }
+                .noChance {
+                    width: 100%;
+                    .youNo {
+                        font-size: 20px;
+                        font-family: PingFang SC;
+                        font-weight: 400;
+                        color: #333333;
+                        line-height: 30px;
+                    }
+                    .guideChange {
+                        margin: 12px 0 8px 0;
+                        font-size: 18px;
+                        font-family: PingFang SC;
+                        color: #999999;
+                        line-height: 28px;
+                    }
+                }
+            }
+            .optionContainer {
+                padding-bottom: 16px;
+                display: grid;
+                grid-template-columns: repeat(20, 1fr);
+                row-gap: 5px;
+                .option {
+                    width: 50px;
+                    height: 50px;
+                    background-image: url('../../assets/images/activity/option.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+                .optionActive {
+                    background-image: url('../../assets/images/activity/optionActive.png');
+                }
+            }
+            .bettingBtn {
+                width: 350px;
+                height: 90px;
+                background-image: url('../../assets/images/activity/betBtnBg.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                text-align: center;
+                line-height: 70px;
+                font-size: 28px;
+                color: #fff;
+                margin: 30px auto 0 auto;
+                cursor: pointer;
+            }
+            .doWork {
+                font-size: 18px;
+                font-family: PingFang SC;
+                font-weight: 400;
+                color: #999999;
+                line-height: 28px;
+            }
+            .divide {
+                margin: 15px 0 20px 0;
+                width: 100%;
+                height: 1px;
+            }
+            .desc {
+                text-align: left;
+                color: #333;
+                font-size: 14px;
+                line-height: 28px;
+            }
+            .redBag {
+                position: absolute;
+                width: 86px;
+                height: 77px;
+                right: 20px;
+                bottom: 0;
+            }
+        }
+    }
+}

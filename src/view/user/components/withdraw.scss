@@ -1,0 +1,189 @@
+.container-withdraw {
+    text-align: left;
+    width: 100%;
+    background: #f6f6f6;
+    height: 100%;
+    position: relative;
+
+    .min-title {
+        padding: 20px;
+        margin-bottom: 20px;
+        background: #fff;
+        border-radius: 10px;
+    }
+
+    .wallet-box,
+    .withdraw-box {
+        padding: 20px;
+        margin-bottom: 20px;
+        background: #fff;
+        border-radius: 10px;
+
+        .title {
+            font-size: 16px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 16px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .wallet-box {
+        .money-box {
+            width: 440px;
+            height: 94px;
+            background: linear-gradient(136deg, #FF9BB5 0%, #FC708B 100%);
+            border-radius: 10px;
+            padding: 12px 20px;
+
+            .ye {
+                font-size: 14px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.88);
+                line-height: 14px;
+                margin-bottom: 30px;
+            }
+
+            .money {
+                font-size: 20px;
+                font-family: DINEngschrift-Alternate, DINEngschrift;
+                font-weight: normal;
+                color: rgba(255, 255, 255, 0.88);
+                line-height: 20px;
+                font-family: DinNumber;
+            }
+        }
+
+    }
+
+    .way-box {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-start;
+
+        &-item {
+            text-align: center;
+            min-width: 133px;
+            line-height: 34px;
+            background: #FFFFFF;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            position: relative;
+            margin-right: 20px;
+            padding: 0 20px;
+
+            &:hover,
+            &.active {
+                border: 1px solid #FC708B;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 2px;
+                    right: 2px;
+                    width: 8px;
+                    height: 8px;
+                    border-width: 8px;
+                    border-style: solid;
+                    border-top-right-radius: 5px;
+                    border-color: #FC708B #FC708B transparent transparent;
+                }
+            }
+        }
+    }
+
+    .bank-usdt-info {
+        width: 286px;
+        background: #F6F6F6;
+        border-radius: 5px;
+        margin-bottom: 20px;
+
+        .bankInfo {
+            display: flex;
+            justify-content: flex-start;
+            padding: 10px;
+
+            .logs {
+                width: 50px;
+                height: 50px;
+                margin-right: 12px;
+                border-radius: 50%;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                dt {
+                    font-size: 16px;
+                    font-family: PingFangSC-Medium, PingFang SC;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.85);
+                    // margin-bottom: 12px;
+                }
+
+                dd {
+                    font-size: 12px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.45);
+                    line-height: 12px;
+                }
+            }
+        }
+
+        .no-data {
+            width: 286px;
+            height: 70px;
+            background: rgba(252, 112, 139, 0.1);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #FC708B;
+            cursor: pointer;
+
+            .icon-add {
+                width: 24px;
+                height: 24px;
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .withdraw-input {
+        margin-bottom: 20px;
+
+        .ant-input-affix-wrapper {
+            border: 1px solid #E5E5E5;
+            &:hover,
+            &:visited,
+            &.active,
+            &.focus {
+                border: 1px solid #ff839b;
+                box-shadow: none;
+            }
+        }
+        .ant-input-number-input,
+        .ant-input {
+            font-size: 15px;
+        }
+
+        .input {
+            width: 532px;
+            // height: 50px;
+            border-radius: 10px;
+            border: 1px solid #E5E5E5;
+        }
+    }
+
+}

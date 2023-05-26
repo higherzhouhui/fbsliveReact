@@ -1,0 +1,145 @@
+@import "../../../assets/style/index.scss";
+
+.bodys {
+    background: #f9f9f9;
+    height: 100vh;
+    padding-top: 53px;
+
+    overflow: hidden;
+}
+.wbg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    background: #fff;
+}
+.leftImg {
+    width: 22px;
+    height: 22px;
+}
+.scrolls {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    padding: 0 15px;
+
+    .box {
+        width: 100%;
+        min-height: 30px;
+        background: #ffffff;
+        border-radius: 8px;
+
+        padding-top: 10px;
+        overflow: hidden;
+
+        display: inline-block;
+
+        margin-bottom: 8px;
+        .box_div {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 8px;
+
+            height: 20px;
+            margin-bottom: 10px;
+            .lefts {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 17px;
+                    height: 17px;
+                    margin-right: 10px;
+                }
+            }
+            .colors {
+                font-size: 13px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #999999;
+            }
+            .binding {
+                font-size: 13px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #fc708b;
+
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+                img {
+                    margin-left: 4px;
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+            .Unbounds {
+                font-size: 13px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #999999;
+
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+                img {
+                    margin-left: 4px;
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+        }
+        .passwords {
+            padding: 8px;
+            min-height: 45px;
+            background: rgba(255, 49, 49, 0.1);
+            border-radius: 0px 0px 8px 8px;
+
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #666666;
+
+            display: grid;
+            grid-template-columns: 12px 1fr;
+            gap: 8px;
+
+            img {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+    .pointAut {
+        margin-top: 13px;
+
+        div {
+            font-size: 13px;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #333333;
+
+            margin-bottom: 4px;
+        }
+        p {
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #333333;
+
+            line-height: 21px;
+        }
+        .fontSize {
+            color: #999999;
+        }
+    }
+    .colorRed {
+        color: #fc708b;
+    }
+}

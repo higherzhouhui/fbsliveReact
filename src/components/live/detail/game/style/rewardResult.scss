@@ -1,0 +1,143 @@
+// .reward-result-box-right {
+//     .s-btn {
+//         padding: 0 13px;
+//         height: 22px;
+//         line-height: 22px;
+//         border-radius: 0 11px 11px 0;
+//         background-color: #F5F5F5;
+//         color: #666666;
+//         font-size: 14px;
+//         font-weight: 400;
+//         cursor: pointer;
+//         &:hover{
+//             background-color: #E9E9E9;
+//         }
+//     }
+
+    
+
+//     &-alert {
+//         border-radius: 8px;
+//         width: 420px;
+
+//         .close {
+//             position: absolute;
+//             right: 10px;
+//             top: 11px;
+//             cursor: pointer;
+//         }
+
+//         .back-icon {
+//             position: absolute;
+//             left: 11px;
+//             cursor: pointer;
+//         }
+
+//         padding: 14px 10px;
+//         position: absolute;
+//         background-color: rgba(51, 51, 51, .9);
+//         left: 0;
+//         bottom: 100px;
+//         height: 628px;
+//         z-index: 3;
+//         .record-name {
+//             margin-bottom: 20px;
+//             text-align: left;
+//             font-weight: 600;
+//             color: #FFFFFF;
+//             font-size: 16px;
+//         }
+
+//         &-list {
+//             margin-top: 50px;
+//             color: #fff;
+
+//             div {
+//                 padding: 0 px;
+//                 height: 45px;
+//                 line-height: 45px;
+//                 font-size: 14px;
+//                 color: rgba(255, 255, 255, .5);
+
+//                 .value {
+//                     color: #fff;
+
+//                     img {
+//                         margin-top: 7.5px;
+//                         width: 30px;
+//                         height: 30px;
+//                         margin-left: 10px;
+//                     }
+
+//                     .icon {
+//                         margin-top: 7.5px;
+//                         width: 30px;
+//                         height: 30px;
+//                         line-height: 30px;
+//                         margin-left: 5px;
+//                         font-size: 16px;
+//                         text-align: center;
+//                         color: #fff;
+//                         border-radius: 4px;
+//                         font-weight: 600;
+//                         background: #FF9090;
+//                         border-radius: 4px;
+//                         &.lhc{
+//                             &:last-child {
+//                                 position: relative;
+//                                 margin-left: 10px;
+//                                 &::before{
+//                                     content: '+';
+//                                     position: absolute;
+//                                     left: -10px;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+
+//                 border-bottom: 1px solid rgba(255, 255, 255, .03);
+//             }
+//         }
+//     }
+
+// }
+
+// .award-result-item {
+//     position: relative;
+//     padding: 20px 0;
+//     border-bottom: 1px solid rgba(255, 255, 255, .03);
+//     color: #fff;
+//     text-align: center;
+//     cursor: pointer;
+
+//     .timer {
+//         color: rgba(255, 255, 255, .5);
+//     }
+
+//     .xjt-icon {
+//         position: absolute;
+//         right: 10px;
+//         top: 50%;
+//         transform: translateY(-50%);
+//     }
+
+//     .b-t-i {
+//         margin-top: 27px;
+//         color: rgba(255, 255, 255, .5);
+//         font-size: 12px;
+
+//         .value {
+//             margin-left: 10px;
+//             font-weight: 600;
+//             color: #FF6F6F;
+//             font-size: 20px;
+//         }
+//     }
+
+//     .result-img {
+//         position: absolute;
+//         right: 40px;
+//         bottom: 0;
+//     }
+// }

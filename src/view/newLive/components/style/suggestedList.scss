@@ -1,0 +1,43 @@
+@import './public.scss';
+
+.suggestedContainer {
+    margin: 50px auto 0;
+    width: 100%;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    background: #161722;
+    width: 1540px;
+    border-radius: 10px;
+    padding: 10px;
+
+    .title {
+        font-size: 20px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.88);
+        line-height: 20px;
+        text-align: left;
+        position: relative;
+        margin-left: 14px;
+        margin-bottom: 20px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 4px;
+            height: 19px;
+            background: #FC708B;
+            border-radius: 2px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -14px;
+        }
+    }
+
+    .live-group {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 15px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,224 @@
+@import "../../../assets/style/index.scss";
+
+.container {
+    padding-top: 93px; //45+12
+    background: $primary;
+    padding-bottom: 70px;
+    min-height: 100vh;
+}
+.tab_title {
+    position: fixed;
+    top: 45px;
+    left: 0;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 40px;
+
+    background: #fff;
+
+    .tab_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 30px;
+            height: 3px;
+            margin-top: 10px;
+        }
+        div {
+            width: 30px;
+            height: 3px;
+            margin-top: 10px;
+        }
+    }
+}
+.content {
+    padding: 14px 5px 0;
+    background: #fff;
+
+    height: 100%;
+    .titles {
+        background: url("../../../assets/image/newImg/myGrade/bj.png") no-repeat;
+        background-size: 100% 100%;
+        height: 175px;
+
+        position: relative;
+
+        margin-bottom: 20px;
+        .Avatars {
+            position: absolute;
+            top: 20px;
+            left: 24px;
+
+            display: flex;
+            align-items: center;
+
+            div {
+                margin-left: 10px;
+                font-size: 16px;
+                font-family: PingFang SC;
+                font-weight: 400;
+                color: #ffffff;
+            }
+        }
+        .progressBar {
+            position: absolute;
+            left: 16px;
+            top: 91px;
+
+            width: calc(100% - 30px);
+            p {
+                font-size: 10px;
+                font-family: PingFang SC;
+                font-weight: 400;
+                color: #ffffff;
+                opacity: 0.9;
+
+                margin-top: 6px;
+            }
+            .icons {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .imgs {
+                    background: url("../../../assets/image/newImg/myGrade/imgs.png") no-repeat;
+                    background-size: 100% 100%;
+
+                    min-width: 30px;
+                    min-height: 20px;
+                    padding: 3px 3px 7px;
+                }
+                img {
+                    width: 26px;
+                    height: 13px;
+                }
+                .imgh {
+                    filter: grayscale(100%);
+                }
+            }
+            .Slider_img {
+                width: 16px;
+                height: 16px;
+            }
+            .ProgressBbar_s {
+                height: 8px;
+                background: rgba(255, 255, 255, 0.25);
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                border-radius: 4px;
+
+                overflow: hidden;
+
+                position: relative;
+                .ProgressBbar_s2 {
+                    width: 0%;
+                    height: 100%;
+                    background: linear-gradient(0deg, #ffd3de, #ffffff);
+                }
+                .Slider_img {
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    left: calc(0% - 8px);
+                    top: -5px;
+                }
+            }
+        }
+    }
+    .title_font {
+        font-size: 15px;
+        font-family: PingFang SC;
+        font-weight: 600;
+        color: #333333;
+    }
+    .privilege {
+        padding: 0 8px;
+        .privilege_div {
+            margin-top: 16px;
+
+            height: 92px;
+
+            background: #f7f7f7;
+            border: 1px solid rgba(204, 204, 204, 0.5);
+            border-radius: 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 15px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: #999999;
+        }
+    }
+    .grade {
+        padding: 0 8px;
+
+        margin-top: 20px;
+
+        .grade_div {
+            margin-top: 15px;
+
+            width: 100%;
+            height: 80px;
+            background: rgba(247, 247, 247, 0);
+            border: 1px solid rgba(204, 204, 204, 0.5);
+            border-radius: 12px;
+
+            padding-left: 9px;
+            padding-right: 17px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .grade_left {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 61px;
+                    height: 61px;
+                }
+                .characters {
+                    margin-left: 8px;
+                    p {
+                        font-size: 14px;
+                        font-family: PingFang SC;
+                        font-weight: 600;
+                        color: #333333;
+                    }
+                    .experience {
+                        margin-top: 10px;
+                        font-size: 14px;
+                        font-family: PingFang SC;
+                        font-weight: 400;
+                        color: #999999;
+                    }
+                }
+            }
+            .but {
+                min-width: 66px;
+                height: 24px;
+                background: #ff839b;
+                border-radius: 5px;
+
+                padding: 0 5px;
+
+                text-align: center;
+                line-height: 24px;
+
+                font-size: 12px;
+                font-family: PingFang SC;
+                font-weight: 400;
+                color: #ffffff;
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+@import './public.scss';
+
+.container-message {
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+
+    .min-title {
+        margin-bottom: 10px;
+    }
+
+    .ant-tabs-tab+.ant-tabs-tab {
+        margin: 0 0 0 40px;
+    }
+
+    .ant-tabs {
+        min-height: 45px;
+    }
+
+    .tabs {
+        position: relative;
+
+        .typeName {
+            font-size: 16px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.88);
+            line-height: 16px;
+        }
+
+        .unread {
+            position: absolute;
+            top: -4px;
+            right: -18px;
+            display: inline-block;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 16px;
+            padding: 0px 8px;
+            background: #FF5757;
+            border-radius: 8px;
+        }
+    }
+
+    .ant-tabs-nav {
+        margin-bottom: 0;
+    }
+
+    .operate-box {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        display: flex;
+        cursor: pointer;
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 40px;
+
+            .icon {
+                display: block;
+                width: 18px;
+                height: 18px;
+                margin-right: 3px;
+            }
+
+            .title {
+                height: 24px;
+                font-size: 16px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.88);
+                line-height: 24px;
+
+                &:hover {
+                    color: #FC708B;
+                }
+
+                &.del {
+                    color: #FC708B;
+                }
+            }
+        }
+    }
+
+    .empty-data {
+        margin-top: 100px;
+    }
+    .page{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+
+    .message-item-box {
+        &-in {
+            border-radius: 8px;
+            color: #333;
+            font-size: 14px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-right: 10px;
+            position: relative;
+
+            .icon-select {
+                width: 18px;
+                height: 18px;
+                display: block;
+                margin-right: 20px;
+                cursor: pointer;
+            }
+
+            .icon {
+                width: 50px;
+                height: 50px;
+                display: block;
+                background: #fd9cb3;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            .isRead {
+                top: 16px;
+                left: 40px;
+                width: 12px;
+                height: 12px;
+                background: #FF3C3E;
+                border-radius: 8px;
+                border: 1px solid #FFFFFF;
+                position: absolute;
+            }
+
+            .content {
+                padding: 20px 0;
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                cursor: pointer;
+
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .title,
+                .msg {
+                    word-break: break-all;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1; //控制显示几行
+                    -webkit-box-orient: vertical; //webbox方向
+                }
+
+                .title {
+                    font-size: 16px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.88);
+                    line-height: 16px;
+                    margin-bottom: 10px;
+                }
+
+                .msg {
+                    width: 85%;
+                    font-size: 12px;
+                    font-family: AppleColorEmoji;
+                    color: rgba(0, 0, 0, 0.45);
+                    line-height: 12px;
+                }
+            }
+
+            .timer {
+                margin-left: auto;
+                font-size: 14px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.45);
+                line-height: 14px;
+                margin-left: 60px;
+            }
+        }
+    }
+   
+}

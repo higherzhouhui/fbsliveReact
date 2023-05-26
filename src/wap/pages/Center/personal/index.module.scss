@@ -1,0 +1,146 @@
+@import "../../../assets/style/index.scss";
+.wbg {
+  background: #fff;
+  height: 45px;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+}
+.leftImg {
+  width: 22px;
+  height: 22px;
+}
+.title {
+  font-size: 18px;
+  color: "#1e1b27";
+  font-weight: 500;
+}
+.bodys {
+  padding: 12px;
+  background: $primary;
+  padding-top: 57px;
+  height: 100%;
+  min-height: 100vh;
+  .title {
+    height: 76px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #333333;
+  }
+  .centes {
+    min-height: 100px;
+    padding: 8px;
+    background: #ffffff;
+    border-radius: 8px;
+
+    margin-bottom: 8px;
+  }
+  .bottoms {
+    min-height: 50px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+}
+.title_font {
+  font-size: 14px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.title_font2 {
+  font-size: 14px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #333333;
+}
+.rows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  .rows_right {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    .rows_right_color {
+      color: #f07998 !important;
+    }
+  }
+}
+.marginBottom {
+  margin-bottom: 33px;
+}
+.displays {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.clipBody {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .clip_mc {
+    width: 100%;
+    height: 100%;
+    // filter: ;
+
+    // opacity: 0.7;
+  }
+  .clipImg {
+    width: 100%;
+    height: 100vw;
+  }
+  .buts {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+  }
+  .clipSubmit {
+    background: none;
+    color: #fff;
+    border: none;
+
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 400;
+  }
+  .colors {
+    color: #f8d74a;
+  }
+}

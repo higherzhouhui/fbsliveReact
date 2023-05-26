@@ -1,0 +1,142 @@
+.left-dom-box {
+    padding: 43px 0 12px;
+    color: #333;
+    font-family: Kanit, "Noto Sans", Roboto;
+    border-radius: 10px;
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .nickname {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.85);
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
+    .join-day {
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.25);
+        line-height: 12px;
+        margin-bottom: 24px;
+    }
+
+    .info-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 35px;
+        margin-bottom: 15px;
+        cursor: pointer;
+
+        .item,.item1 {
+            .link-name {
+                color: rgba(0, 0, 0, 0.45);
+                font-size: 12px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                line-height: 12px;
+            }
+        }
+    }
+
+    .list {
+        padding: 0 20px;
+
+        .item {
+            width: 100%;
+            cursor: pointer;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+
+            .line {
+                width: 100%;
+                border: .5px solid #f2f2f2;
+            }
+
+            .pd-10 {
+                width: 100%;
+                padding: 16px 20px;
+                display: flex;
+                align-items: center;
+            }
+
+            .link-name {
+                text-align: left;
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.45);
+                line-height: 16px;
+            }
+
+            .pd-10 {
+                border-radius: 5px;
+            }
+        }
+    }
+    .item,.item1{
+        display: flex;
+        align-items: center;
+        .link-img {
+            display: flex;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            path {
+                fill: #afafaf;
+            }
+    
+            div {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    
+        .link-name {
+            font-size: 16px;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 500;
+            line-height: 16px;
+        }
+    
+        &.active,
+        &:hover {
+            border-radius: 5px;
+            background: #FEE2E8;
+    
+            .link-name {
+                color: #fc708b;
+            }
+    
+            .link-img path {
+                fill: #fc708b;
+            }
+        }
+    
+    }
+    .item1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .link-img{
+            margin-right: 0;
+            margin-bottom: 12px;
+            width: 24px;
+        }
+        &.active,
+        &:hover {
+            background: transparent;
+            .link-name{
+                color: #fc708b !important;
+            }
+        }
+    }
+}
+

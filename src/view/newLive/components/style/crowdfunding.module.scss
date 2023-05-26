@@ -1,0 +1,284 @@
+.crowdfundingBox {
+    position: fixed;
+    z-index: 10;
+    left: calc(50% - 210px);
+    top: calc(50% - 281px);
+    width: 420px;
+    height: 562px;
+    background: url('../../../../assets/images/liveDetail/crowdfunding/out-box.png');
+    background-size: 100% 100%;
+
+    .dragBox {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 70px;
+        cursor: move;
+    }
+
+    .closeIcon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .title {
+        margin: 30px auto 16px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.88);
+    }
+
+    .innerBox {
+        margin: auto;
+        padding: 0 13px 0 7px;
+        width: 376px;
+        height: 257px;
+        background-image: url('../../../../assets/images/liveDetail/crowdfunding/in-box.png');
+        background-size: 100% 100%;
+        overflow: hidden;
+
+        .topInfo {
+            display: flex;
+            justify-content: space-between;
+            margin: 16px 0 12px;
+
+            .innerTitle {
+                font-weight: 400;
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.88);
+            }
+
+            .rightInfo {
+                display: flex;
+                align-items: center;
+
+                .joinTxt {
+                    font-size: 12px;
+                    color: rgba(255, 255, 255, 0.45);
+                }
+
+                .avatar {
+                    margin-right: 4px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    animation: avatarAnimate 1s;
+                }
+            }
+        }
+
+        .giftBox {
+            display: flex;
+            align-items: center;
+            height: 187px;
+
+            .giftItem {
+                position: relative;
+                padding: 12px 0;
+                box-sizing: border-box;
+                flex: 1;
+                height: 187px;
+                background-color: rgba(0, 0, 0, .1);
+                border-radius: 4px;
+                margin-left: 8px;
+                text-align: center;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                .endIcon {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+
+                .giftIcon {
+                    height: 70px;
+
+                    &.sort {
+                        height: 60px;
+                    }
+                }
+
+                .gameName {
+                    margin-top: 8px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: rgba(255, 255, 255, 0.88);
+                }
+
+                .processBox {
+                    margin: 8px auto 3px;
+                    position: relative;
+                    height: 2px;
+                    width: 116px;
+                    background: #4E4F57;
+                    border-radius: 1px;
+
+                    &.sort {
+                        width: 68px;
+                    }
+
+                    .processed {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 2px;
+                        border-radius: 2px;
+                        background-color: #FC708B;
+                    }
+                }
+
+                .processTxt {
+                    font-size: 12px;
+                    color: rgba(255, 255, 255, 0.45);
+
+                    .processNum {
+                        color: rgba(255, 255, 255, 0.88);
+                        font-weight: 600;
+                    }
+                }
+
+                .button {
+                    margin-top: 12px;
+                    display: inline-block;
+                    width: 94px;
+                    height: 24px;
+                    line-height: 24px;
+                    background: #FC708B;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-size: 12px;
+                    cursor: pointer;
+
+                    &.sort {
+                        margin-top: 4px;
+                        width: 80px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .awardBox {
+        margin: 16px auto 0;
+        padding: 0 13px 0 7px;
+        width: 376px;
+        height: 198px;
+        background: #4E4F57;
+        border-radius: 8px;
+
+        .topTitle {
+            padding: 12px 0;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .txtBox {
+            position: relative;
+            width: 100%;
+            height: 150px;
+
+            .txt {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 100%;
+                transform: translate(-50%, -50%);
+                font-weight: 500;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.85);
+            }
+        }
+
+    }
+}
+
+.crowdfundingButton {
+    padding: 2px;
+    position: absolute;
+    right: 13px;
+    top: 10px;
+    width: 104px;
+    // max-width: 140px;
+    height: 44px;
+    background: rgba(0,0,0,.4);
+    border-radius: 8px;
+    text-align: left;
+    user-select: none;
+    img{
+        margin-right: 8px;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        -webkit-user-drag: none;
+    }
+    .content{
+        display: flex;
+        .box{
+            margin-top: 9px;
+        }
+        .processBox {
+            position: relative;
+            height: 2px;
+            width: 46px;
+            background: rgba(0,0,0, .4);
+            border-radius: 1px;
+
+            .processed {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 2px;
+                border-radius: 2px;
+                background-color: #FC708B;
+            }
+        }
+
+        .processTxt {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.88);
+            line-height: 17px;
+            .processNum {
+                color: #FC708B;
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.resultBox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+    .resultClose{
+        margin-top: 76px;
+        cursor: pointer;
+    }
+    .resultImg{
+        animation: animate 1s;
+    }
+}
+@keyframes animate {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+@keyframes avatarAnimate {
+    0% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}

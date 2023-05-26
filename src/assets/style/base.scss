@@ -1,0 +1,658 @@
+@charset "UTF-8";
+
+/*css 初始化 */
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset,
+img,
+input,
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+// webpack-dev-server-client-overlay-div
+
+// 隐藏屏幕报错
+#webpack-dev-server-client-overlay {
+  display: none;
+}
+/*去掉input等聚焦时的蓝色边框*/
+ul,
+ol {
+  list-style: none;
+}
+
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Microsoft YaHei", "SimSun", "宋体";
+}
+
+select,
+input {
+  vertical-align: middle;
+}
+
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+/*防止拖动*/
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table {
+  border-collapse: collapse;
+}
+
+body {
+  font-family: "Microsoft YaHei";
+  color: #333;
+}
+
+.clearfix:before,
+.clearfix:after {
+  /*清楚浮动*/
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/
+}
+
+a {
+  text-decoration: none !important;
+  color: #666;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+/*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s,
+i,
+em {
+  font-style: normal;
+  text-decoration: none;
+}
+
+/*公共类*/
+.container {
+  /*版心 提取 */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-indent {
+  text-indent: 2em;
+}
+
+.hide {
+  display: none;
+}
+
+.font0 {
+  font-size: 0px;
+}
+
+.font12 {
+  font-size: 12px;
+}
+
+.font14 {
+  font-size: 14px;
+}
+
+.font16 {
+  font-size: 16px;
+}
+
+.font18 {
+  font-size: 18px;
+}
+
+.font24 {
+  font-size: 24px;
+}
+
+.font28 {
+  font-size: 28px;
+}
+
+.font30 {
+  font-size: 30px;
+}
+
+.font20 {
+  font-size: 20px;
+}
+
+$baseColor: #ff839b;
+
+.ant-btn-primary {
+  height: 36px;
+  background: linear-gradient(180deg, #fcb7c9 0%, #fc708b 100%);
+  border-radius: 5px;
+  border: none;
+
+  &:hover {
+    background: linear-gradient(180deg, #fcb7c9 0%, #fc708b 100%);
+  }
+}
+
+.ant-tabs-tab {
+  &:hover {
+    color: $baseColor;
+  }
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: $baseColor;
+}
+
+.green {
+  color: rgba(19, 190, 78, 1);
+}
+
+.ant-tabs-ink-bar {
+  background: $baseColor;
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  width: 0.3em;
+  height: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.3em;
+  background-color: #ccc;
+  box-shadow: inset 0 0 5px #ccc;
+  background: #ccc;
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  border-color: $baseColor;
+  color: #fff;
+}
+
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: $baseColor !important;
+  box-shadow: unset !important;
+}
+
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border-color: $baseColor !important;
+  box-shadow: unset !important;
+}
+
+html {
+  --antd-wave-shadow-color: $baseColor;
+  --scroll-bar: 0;
+}
+
+.ant-btn-primary:focus {
+  background: linear-gradient(180deg, #fcb7c9 0%, #fc708b 100%);
+}
+
+.b-btn {
+  padding: 0 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+
+  &.large {
+    padding: 0 50px;
+  }
+}
+
+.primary-text {
+  color: $baseColor;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-a-c {
+  align-items: center;
+}
+
+.f-j-sb {
+  justify-content: space-between;
+}
+
+.baseColor {
+  color: $baseColor;
+}
+
+.baseBackground {
+  background: linear-gradient(180deg, #fcb7c9 0%, #fc708b 100%) !important;
+}
+
+.ant-popover-inner {
+  border-radius: 8px;
+}
+
+.w-color {
+  color: #fff !important;
+}
+
+.baseBorder {
+  border: 1px solid $baseColor !important;
+}
+
+.hover-btn {
+  border: 1px solid $baseColor;
+  color: $baseColor;
+  background-color: rgba(0, 190, 64, 0.2);
+}
+
+// .ant-popover-inner{
+//     background-color: ;
+//     border-radius: 8px;
+// }
+// .ant-popover-arrow-content{
+//     --antd-arrow-background-color: rgba(51, 51, 51, .9);
+// }
+
+.loading {
+  position: relative;
+  opacity: 0.4;
+
+  &::after {
+    position: absolute;
+
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #555;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    animation: spin 1s linear infinite;
+    transform-origin: center;
+    content: "";
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ant-btn:active {
+}
+
+.ant-input-number:hover,
+.ant-input-number:active,
+.ant-input-number:focus {
+  border: 1px solid $baseColor;
+}
+
+.ant-input-number.ant-input-number-focused {
+  border: 1px solid $baseColor;
+  box-shadow: unset;
+}
+
+.ant-modal-content {
+  border-radius: 16px;
+  overflow: hidden;
+
+  .ant-input-password {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+
+    input {
+      background-color: #f5f5f5;
+    }
+  }
+
+  .ant-modal-confirm-btns {
+    text-align: center;
+
+    .ant-btn {
+      padding: 0 30px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 20px;
+      border-color: #ff5e86;
+
+      span {
+        line-height: 32px;
+      }
+
+      &.ant-btn-default {
+        color: #ff5e86;
+      }
+    }
+  }
+}
+
+.ant-form-item {
+  label {
+    color: #999;
+  }
+}
+
+.ant-input {
+  &:hover {
+    border-color: $baseColor;
+  }
+
+  &:focus {
+    border-color: $baseColor;
+    box-shadow: unset;
+  }
+}
+
+.ant-input-number-wrapper {
+  border-color: rgb(245, 245, 245);
+}
+
+.small-alert {
+  .ant-modal-footer {
+    justify-content: center;
+  }
+
+  .ant-modal-body {
+    padding-bottom: 20px !important;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .ant-modal-header {
+    text-align: center;
+  }
+}
+
+.ant-modal-content {
+  padding: 20px 10px;
+
+  border-radius: 10px;
+
+  input,
+  .ant-input-group-addon,
+  .ant-input-affix-wrapper,
+  .ant-select-selector {
+    border-color: #f5f5f5 !important;
+  }
+
+  .ant-form-item-required {
+    margin-right: 10px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .ant-modal-header {
+    padding: 0;
+    border-bottom: unset;
+  }
+
+  .ant-input-number-group-addon {
+    background-color: unset;
+    border-left: unset;
+  }
+
+  .ant-input-number {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .ant-modal-footer {
+    display: flex;
+    align-items: center;
+    border-top: unset;
+    padding: 0 20px;
+
+    .ant-btn {
+      padding: 0 35px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .ant-btn-default {
+      background-color: #fff;
+      color: #ff5e86;
+      border: 1px solid #ff5e86;
+    }
+  }
+
+  .ant-modal-body {
+    border-bottom: unset;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    display: none;
+  }
+}
+
+#react-refresh-overlay {
+  display: none;
+}
+
+.maintain {
+  position: relative;
+  width: 327px;
+  margin: 0 auto;
+
+  .text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 284px;
+    top: 313px;
+    color: #8287f1;
+    font-size: 15px;
+    line-height: 24px;
+    word-break: break-all;
+    max-height: 120px;
+    overflow-y: scroll;
+  }
+}
+
+.globalClose {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(45deg);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 2px;
+    height: 12px;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    width: 12px;
+    height: 2px;
+  }
+}
+
+// 公共样式
+.w1200 {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.app-overlay {
+  position: fixed !important;
+  left: 0 !important;
+  top: 80px !important;
+}
+
+.active-menu {
+  border-radius: 8px;
+
+  .ant-menu-item,
+  .ant-menu-submenu-title {
+    padding: 0 10px !important;
+
+    &:first-child {
+      margin-top: 10px !important;
+    }
+
+    &:last-child {
+      margin-bottom: 10px !important;
+    }
+  }
+}
+
+.langyage-menu {
+  border-radius: 8px;
+}
+
+.ant-switch-checked {
+  background: #fd7590;
+}
+
+.ant-pagination-item :hover {
+  border-color: #fc708b !important;
+}
+
+.ant-pagination-item-active {
+  border-color: #fc708b;
+}
+
+.ant-pagination-item-active a {
+  color: #fc708b;
+}
+
+.yidun_feedback {
+  display: none !important;
+}
+
+@font-face {
+  font-family: DinNumber;
+  src: url("../../assets/font/DIN-number.ttf");
+  font-weight: 700;
+}
+
+.color01 {
+  background: linear-gradient(145deg, #FFE0AF 0%, #C98000 100%);
+}
+.color02 {
+  background: linear-gradient(145deg, #B4DCFF 0%, #308BDB 100%);
+}
+.color03 {
+  background: linear-gradient(145deg, #DDDDDD 0%, #5E5E5E 100%);
+}
+.color04 {
+  background: linear-gradient(145deg, #FBB992 0%, #C6662E 100%);
+}
+.color05 {
+  background: linear-gradient(145deg, #95E0F5 0%, #156884 100%);
+}
+.color06 {
+  background: linear-gradient(145deg, #94ADFF 0%, #293099 100%);
+}
+.color07 {
+  background: linear-gradient(145deg, #D8D8D8 0%, #6D6D6D 100%);
+}
+.color08 {
+  background: linear-gradient(145deg, #FFD9D9 0%, #B13232 100%);
+}
+.color09 {
+  background: linear-gradient(145deg, #AA6834 0%, #6D4C13 100%);
+}
+.color10 {
+  background: linear-gradient(145deg, #88F7B1 0%, #2A880C 100%);
+}

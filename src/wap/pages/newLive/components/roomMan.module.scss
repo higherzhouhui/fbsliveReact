@@ -1,0 +1,27 @@
+.list {
+    min-height: 40vh;
+    max-height: 40vh;
+    overflow-y: scroll;
+
+    .bimg {
+        height: 13px;
+        object-fit: contain;
+    }
+}
+
+.idTag {
+    width: 17px;
+    height: 17px;
+    margin-right: 4px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    color: #A0A0A0;
+    font-size: 12px;
+}
+
+.manEmpty {
+    opacity: 0.5;
+}

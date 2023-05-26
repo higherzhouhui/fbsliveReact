@@ -1,0 +1,358 @@
+@import '../../../assets/style/index.scss';
+
+.gbg {
+    min-height: 100vh;
+    position: relative;
+
+    .selectDate {
+        position: absolute;
+        right: 12px;
+        top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+        background-color: #f5f5f5;
+        line-height: 14px;
+        padding: 5px 8px;
+        border-radius: 12px;
+    }
+
+    .selectDateImg {
+        display: inline-block;
+    }
+}
+
+.content {
+    padding: 12px 8px;
+}
+
+
+.balance {
+    background: url(../../../assets/image/center/money-bg.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 12px 8px;
+    color: #fff;
+
+    .title {
+        position: relative;
+        padding-left: 8px;
+        font-size: 14px;
+        color: #fff;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 9px;
+            background: #fff;
+            border-radius: 1000px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    .money {
+        margin-top: 20px;
+        padding-left: 8px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+.rtitle {
+    position: relative;
+    padding-left: 8px;
+    font-size: 16px;
+    color: #333;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 4px;
+        height: 9px;
+        background: $main;
+        border-radius: 1000px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.way {
+    margin-top: 24px;
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 8px;
+        margin: 14px 0;
+
+        .box {
+            @extend .disFlexs;
+            text-align: center;
+            padding: 0 12px 7px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+
+            &.active {
+                border-color: $main;
+                color: $main;
+                background: rgba($color: $main, $alpha: 0.1);
+            }
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                margin-top: 12px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.goldList {
+    padding: 12px 8px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    border-radius: 8px;
+
+    .box {
+        height: 60px;
+        border-radius: 8px;
+        @extend .disFlexs;
+        justify-content: flex-end;
+        border: 1px solid transparent;
+        background: #f5f5f5;
+        color: #333;
+        padding-bottom: 7px;
+
+        p {
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 14px;
+
+            .goldIcon {
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        &:active,
+        &.active {
+            color: $main;
+            border-color: $main;
+            background: rgba($color: $main, $alpha: 0.1);
+        }
+    }
+}
+
+.wayContent {
+    padding: 12px 8px;
+    background: #fff;
+    border-radius: 8px;
+    margin: 10px 0;
+
+    .input {
+        display: flex;
+        margin-top: 20px;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.03);
+        align-items: flex-end;
+        padding: 4px 0;
+
+        span {
+            font-size: 28px;
+            margin-right: 5px;
+        }
+    }
+
+    p {
+        margin-top: 12px;
+        color: #999;
+        font-size: 12px;
+    }
+
+    .input2 {
+        padding: 6px 0;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.03);
+        margin: 5px 0 8px;
+    }
+}
+
+.wayCard {
+    dt {
+        @extend .disFlex;
+        align-items: center;
+        font-size: 14px;
+        margin-bottom: 16px;
+
+        span {
+            color: #999;
+            width: 90px;
+        }
+
+        p {
+            margin-top: 0;
+            flex: 1;
+            color: #333;
+            font-size: 14px;
+        }
+
+        img {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    .notice {
+        font-size: 12px;
+        color: $main;
+    }
+}
+
+.step {
+    font-size: 12px;
+
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.submit {
+    width: 300px;
+    height: 42px;
+    border-radius: 1000px;
+    margin: 40px auto;
+}
+
+.bankList {
+    display: flex;
+    margin: 16px 0;
+    height: 32px;
+    background: #f5f5f5;
+    border-radius: 1000px;
+
+    .box {
+        width: 100%;
+        line-height: 32px;
+        text-align: center;
+
+        &.active {
+            background: $main;
+            border-radius: 1000px;
+            color: #fff;
+        }
+    }
+}
+
+.tabs {
+    background-color: #fff;
+    border-top: 1px solid #f5f5f5;
+}
+
+.tagSkeleton {
+    height: 42px;
+}
+
+.list {
+    padding: 8px;
+    padding-bottom: 54px;
+
+    .listItem {
+        width: 100%;
+        height: 80px;
+        border-radius: 8px;
+        padding: 12px 9px;
+        box-sizing: border-box;
+        margin-bottom: 8px;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 2fr 3fr 2fr;
+        align-items: center;
+        text-align: center;
+        line-height: 1.4;
+
+        .left,
+        .center {
+            position: relative;
+            padding: 0 10px;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 1px;
+                height: 24px;
+                background: rgba($color: #000000, $alpha: 0.05);
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+            }
+        }
+
+        .money {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: 12px;
+            font-weight: 500;
+            color: #02b154;
+            line-height: 18px;
+            position: relative;
+
+            .text {
+                color: #999;
+            }
+        }
+
+        .green {
+            @extend .money;
+            color: #e36049;
+        }
+
+        .dbr {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            width: 20px;
+            object-fit: contain;
+            height: 20px;
+        }
+    }
+
+    .bottom {
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background: #fff;
+        width: 100%;
+        padding: 0 8px;
+        font-size: 18px;
+
+        .red {
+            color: $main;
+            flex: 1;
+            text-align: center;
+        }
+
+        .green {
+            color: $green;
+            flex: 1;
+            text-align: center;
+        }
+
+        span {
+            font-size: 14px;
+            color: #ccc;
+        }
+    }
+}

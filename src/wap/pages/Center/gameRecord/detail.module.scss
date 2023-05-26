@@ -1,0 +1,56 @@
+@import '../../../assets/style/index.scss';
+.gbg {
+    min-height: 100vh;
+    .content{
+    position: relative;
+    .img{
+        position: absolute;
+        top: -36px;
+        right: 60px;
+    }
+    .money{
+        margin: 80px auto 15px;
+        height: 24px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 24px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .tips,.date{
+        height: 12px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #999999;
+        line-height: 12px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .date{
+        margin-bottom: 32px;
+    }
+    .list{
+        margin-top: 48px;
+        padding: 0 8px;
+        .item{
+            color: #999;
+        }
+        .adm-list-item-content-extra{
+            color: red !important;
+        }
+    }
+    }
+   
+}
+.wbg {
+    background: #f5f5f5;
+}
+.adm-list-item-content-extra{
+    color: #000 !important;
+}
+.pl6{
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+

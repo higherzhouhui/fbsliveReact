@@ -1,0 +1,95 @@
+.container-message-detail {
+    padding: 20px;
+
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .icon-back {
+            width: 29px;
+            height: 28px;
+            display: inline-block;
+            margin-right: 4px;
+            cursor: pointer;
+        }
+
+        .title {
+            line-height: 20px;
+            font-size: 20px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.88);
+        }
+    }
+
+    .top {
+        margin-top: 20px;
+        margin-bottom: 14px;
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+            font-size: 16px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.88);
+            line-height: 16px;
+        }
+
+        .operate-right-box {
+            &-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 40px;
+
+                .icon {
+                    display: block;
+                    width: 18px;
+                    height: 18px;
+                    margin-right: 3px;
+                }
+
+                .title {
+                    height: 24px;
+                    font-size: 16px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.88);
+                    line-height: 24px;
+
+                    &:hover {
+                        color: #FC708B;
+                    }
+
+                    &.del {
+                        color: #FC708B;
+                    }
+                }
+            }
+            .prev,.next{
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                cursor: pointer;
+                margin-left: 40px;
+            }
+        }
+    }
+
+    .time {
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.45);
+        line-height: 12px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .content{
+        padding: 20px 0;
+        height: 590px;
+        overflow-y: auto;
+    }
+}

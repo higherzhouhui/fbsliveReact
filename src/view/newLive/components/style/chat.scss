@@ -1,0 +1,430 @@
+.live-detail-box-chat {
+  position: relative;
+  padding: 20px 0 10px;
+  text-align: left;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  line-height: 22px;
+  height: 775px;
+  display: flex;
+  flex-flow: column;
+
+  .focusBox {
+    position: absolute;
+    width: 267px;
+    height: 52px;
+    left: 0;
+    bottom: 120px;
+    overflow: hidden;
+
+    .page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .dialog {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-610px);
+      transition: all 1.5s;
+
+      &.dialog_visible {
+        transition: all 1.5s;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .gaoliang {
+    color: rgba(255, 131, 155, 0.8);
+  }
+
+  .msg {
+    word-break: break-all;
+  }
+
+  .name_color {
+    color: rgba(255, 255, 255, 0.45);
+  }
+
+  .msg_color {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &-content {
+    margin-top: 20px;
+    flex: 1;
+    overflow-y: auto;
+
+    .item {
+      margin-bottom: 10px;
+
+      img {
+        margin-right: 5px;
+        width: auto;
+      }
+
+      .f-a-c {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  &-input {
+    width: 100%;
+    height: 40px;
+    background: #262738;
+    border-radius: 5px;
+    margin-top: 15px;
+    position: relative;
+
+    .ant-input {
+      border: none;
+      width: 100%;
+      height: 40px;
+      background: #262738;
+      border-radius: 10px;
+      color: #fff;
+      margin-right: auto;
+      padding-right: 40px;
+    }
+
+    .icon {
+      width: 17px;
+      height: 18px;
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  }
+
+  .focus_card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 267px;
+    height: 52px;
+    background: url("../../../../assets/images/live/focus/bg.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 10px 0px 10px 8px;
+
+    &_avatar {
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    &_info {
+      margin-left: 4px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      &_name {
+        height: 12px;
+        font-size: 12px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #333333;
+        line-height: 12px;
+      }
+
+      &_tips {
+        height: 10px;
+        font-size: 10px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #666666;
+        line-height: 10px;
+      }
+    }
+
+    &_btn {
+      margin-left: auto;
+      width: 68px;
+      height: 32px;
+      background: url("../../../../assets/images/live/focus/btn.png") no-repeat;
+      background-size: 100% 100%;
+      text-align: center;
+      line-height: 32px;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
+
+.CarSvga {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  pointer-events: none;
+}
+
+.CarSvga2_sss canvas {
+  width: 800px;
+  // height: 50vh;
+  position: fixed !important;
+  top: 50%;
+  right: 150% !important;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  pointer-events: none;
+}
+.FloatingScreens canvas {
+  width: 335px;
+  height: 90px;
+  position: fixed !important;
+  top: 70%;
+  right: 110% !important;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  pointer-events: none;
+}
+.publicScreen {
+  position: fixed;
+  top: 72px;
+  right: -100%;
+  z-index: 99;
+  .img1 {
+    height: 87px;
+    width: calc(100vw - 40px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 8px;
+
+    .Avatars {
+      width: 27px !important;
+      height: 27px !important;
+      border-radius: 100%;
+      margin-right: 8px;
+
+      img {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+
+    .fontCentre {
+      width: 200px;
+      overflow: hidden;
+      // overflow: visible !important;
+    }
+
+    .fontCentre2 {
+      white-space: nowrap;
+      animation: sport 5s infinite linear;
+    }
+
+    .colors {
+      color: #c7d3fa;
+    }
+  }
+
+  // animation: publicScreenIdentifier 10s infinite;
+}
+.publicScreen3 {
+  position: fixed;
+  top: 189px;
+  // left: 20px;
+  // margin: auto;
+  right: -100%;
+  z-index: 99;
+  background: url("../../../../wap/assets/image/live/sj/zhongj.png") no-repeat;
+  background-size: 100% 100%;
+
+  .img3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .Avatars {
+      width: 27px !important;
+      height: 27px !important;
+      border-radius: 100%;
+      margin-right: 8px;
+
+      img {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+    line-height: 85px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+
+    .fontCentre {
+      width: 200px;
+      overflow: hidden;
+      // overflow: visible !important;
+    }
+
+    .fontCentre2 {
+      white-space: nowrap;
+      animation: sport 5s infinite linear;
+    }
+
+    .colors {
+      color: #fbced0;
+    }
+  }
+
+  animation: publicScreenIdentifier 10s infinite;
+}
+
+@keyframes publicScreenIdentifier {
+  0% {
+    right: -100%;
+  }
+
+  40% {
+    // 判断居中
+    right: calc(50vw - calc(507px / 2));
+  }
+
+  50% {
+    right: calc(50vw - calc(507px / 2));
+  }
+
+  60% {
+    right: calc(50vw - calc(507px / 2));
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+.publicScreen4 {
+  position: fixed;
+  top: 72px;
+  right: -100%;
+  z-index: 99;
+
+  background: url("../../../../wap/assets/image/live/sj/songli.png") no-repeat;
+  background-size: 100% 100%;
+  // right: 0;
+  .img1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+
+    padding-top: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .Avatars {
+      width: 27px !important;
+      height: 27px !important;
+      border-radius: 100%;
+      margin-right: 8px;
+
+      img {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+    line-height: 87px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+
+    .fontCentre {
+      width: 200px;
+      overflow: hidden;
+      // overflow: visible !important;
+    }
+
+    .fontCentre2 {
+      white-space: nowrap;
+      animation: sport 5s infinite linear;
+    }
+
+    .colors {
+      color: #c7d3fa;
+    }
+  }
+
+  animation: publicScreenIdentifier 10s infinite;
+}
+.live-detail-chatContainer {
+  margin-top: 0;
+  width: 100%;
+  position: relative;
+  .comments {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    display: none;
+
+    width: 280px;
+    height: 300px;
+    word-wrap: break-word;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 99;
+    background: #161722;
+  }
+  .comments-close {
+    position: absolute;
+  }
+  .comments-title {
+    display: flex;
+    margin-right: 10px;
+    justify-content: flex-end;
+    .right-title {
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  .item {
+    color: #fff;
+    width: auto;
+    &:hover {
+      background: rgba(244, 240, 240, 0.3);
+      cursor: pointer;
+    }
+  }
+}

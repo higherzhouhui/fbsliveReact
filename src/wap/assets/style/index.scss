@@ -1,0 +1,739 @@
+$main: #ff839b;
+$main: #ff839b;
+$gray: #f6f7f8;
+$gold: #f39508;
+$green: #14c46c;
+$background: linear-gradient(128deg, #eb9bff 0%, #e067ff 37%, #5e29e0 100%);
+$green: #14c46c;
+$background: linear-gradient(128deg, #eb9bff 0%, #e067ff 37%, #5e29e0 100%);
+$primary: #f9f9f9;
+$hoary: #f6f7fc;
+// 隐藏屏幕报错
+#webpack-dev-server-client-overlay {
+  display: none;
+}
+.gold {
+  color: $gold;
+}
+
+.gbg {
+  background: #f5f5f5;
+}
+
+.wbg {
+  background: #fff;
+}
+
+.bbg {
+  background: rgba($color: #000000, $alpha: 0.5);
+}
+
+:root:root {
+  --adm-color-primary: #ff839b;
+  --adm-font-size-1: 14px;
+  --adm-font-size-2: 14px;
+  --adm-font-size-3: 14px;
+  --adm-font-size-4: 14px;
+  --adm-font-size-5: 14px;
+  --adm-font-size-6: 14px;
+  --adm-font-size-7: 14px;
+  --adm-font-size-8: 14px;
+  --adm-font-size-9: 14px;
+  --adm-font-size-10: 16px;
+}
+
+.adm-nav-bar-back-arrow {
+  font-size: 16px !important;
+}
+
+.adm-nav-bar-title {
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+.adm-button {
+  white-space: nowrap;
+}
+
+.adm-form {
+  .adm-list-body {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+  }
+}
+
+.adm-form-item-label {
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.adm-tab-bar-item-title {
+  font-size: 12px;
+}
+
+.adm-popup-body-position-bottom {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  // color: #fff;
+}
+
+.adm-notice-bar.adm-notice-bar-alert {
+  background-color: rgba($color: $main, $alpha: 0.1);
+  color: $main;
+}
+
+.adm-tabs-tab {
+  padding: 13px 0 9px;
+}
+
+.navTitle {
+  background: $main;
+  // color: #fff;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.navTitle2 {
+  background: none;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.homeBody {
+  padding-bottom: 50px;
+  background: #f5f4fe;
+}
+
+.disFlex {
+  display: flex;
+  align-items: center;
+}
+
+.disFlexb {
+  @extend .disFlex;
+  justify-content: space-between;
+}
+
+.disFlexs {
+  @extend .disFlex;
+  flex-direction: column;
+}
+
+.disFlexc {
+  @extend .disFlex;
+  justify-content: center;
+}
+
+.liveRoomPopup {
+  color: #5c5c5c;
+  // height: 450px;
+  height: 530px;
+  // background: #fff;
+  background: rgba(78, 78, 78, 0.96);
+}
+
+// fb体育
+.liveRoomPopup3 {
+  color: #5c5c5c;
+  // height: 450px;
+  height: 510px;
+  // background: #fff;
+  background: rgba(78, 78, 78, 0.96);
+}
+
+.tabs_adm_tabs_tab {
+  .adm-tabs-tab {
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #999999;
+  }
+
+  .adm-tabs-tab-active {
+    font-weight: 600 !important;
+    color: #333333 !important;
+  }
+}
+
+.liveRoomPopup1 {
+  color: #333;
+}
+
+.adm-form-item-label {
+  text-align: left;
+}
+
+.adm-form-item-feedback-error {
+  font-size: 12px;
+}
+
+.adm-form {
+  .adm-list-item-content-arrow {
+    display: none;
+  }
+}
+
+.skBody {
+  padding: 0 20px;
+}
+
+.noTabLine {
+  .adm-tabs-header {
+    border-bottom: 0;
+  }
+
+  .adm-tabs-header-mask {
+    display: none;
+  }
+
+  .adm-image-tip {
+    background-color: unset;
+  }
+
+  .adm-tabs-tab-wrapper {
+    padding: 0 17px;
+  }
+}
+
+.bgImg {
+  .adm-image-tip {
+    background: unset;
+  }
+}
+
+.nbg {
+  .adm-list-body {
+    background: transparent;
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .adm-list-item {
+    background: transparent;
+  }
+
+  .adm-list-item-content {
+    border-top: 0;
+    padding: 0;
+  }
+
+  .adm-list-item-content-arrow {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    right: 15px;
+    bottom: 12px;
+  }
+
+  .adm-list-item-content-main {
+    padding: 0;
+  }
+
+  a.adm-list-item:active:not(.adm-list-item-disabled) {
+    opacity: 0.8;
+  }
+
+  a.adm-list-item:active:not(.adm-list-item-disabled)::after {
+    display: none;
+  }
+
+  .adm-collapse-panel-content {
+    // background-color: #f5f6f9;
+    // border-radius: 8px;
+
+    background: #3c3b3b;
+    border-radius: 0 0 4px 4px;
+    margin-top: -8px;
+  }
+}
+.myGrade_Slider {
+  .adm-slider-track-container {
+    padding: 5px 0;
+  }
+  .adm-slider-thumb {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 0;
+    text-align: center;
+    line-height: 28px;
+    background: none;
+    box-shadow: none;
+    color: none;
+  }
+  .adm-slider-track {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+  }
+  .adm-slider-fill {
+    height: 6px;
+    background: linear-gradient(0deg, #ffd3de, #ffffff);
+    // border: 1px solid;
+    // border-image: linear-gradient(0deg, #ffc3d2, #ffffff);
+
+    border-radius: 4;
+  }
+}
+
+.dplayer-mobile-play,
+.dplayer-controller,
+.dplayer-notice {
+  display: none !important;
+}
+
+.adm-cascader .adm-plain-anchor {
+  color: #25272f;
+}
+
+.adm-cascader .adm-cascader-view-item-active {
+  color: $main;
+}
+
+.adm-collapse-arrow {
+  width: 19px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bankPop {
+  color: #333;
+}
+
+.tbg {
+  .adm-popup-body {
+    background: rgba($color: #333, $alpha: 0.7);
+  }
+}
+
+.pai {
+  .adm-tabs-tab-wrapper-stretch {
+    flex: unset;
+  }
+}
+
+.adm-dialog-footer .adm-dialog-action-row > .adm-dialog-button {
+  color: #333;
+}
+
+.adm-dialog-footer .adm-dialog-action-row > .adm-dialog-button-bold {
+  color: $main;
+}
+
+.tradeDetailList {
+  .adm-list-item-content-extra {
+    font-size: 13px;
+    color: #333;
+  }
+}
+
+.noBor {
+  .adm-tabs-header {
+    border-bottom: 0;
+  }
+}
+
+.noBor2 {
+  .adm-capsule-tabs-header {
+    border-bottom: none;
+    padding: 0 40px 0 0;
+    // padding: 0px;
+  }
+
+  .adm-capsule-tabs-tab {
+    padding: 12px 20px;
+  }
+
+  .adm-capsule-tabs-tab-wrapper {
+    padding: 0 9px 0 0;
+  }
+
+  .adm-capsule-tabs-tab-active {
+    color: #fc708b;
+    background-color: #fdedf0;
+  }
+}
+
+.noBor3 {
+  .adm-capsule-tabs-header {
+    padding: 3px 0px;
+    border: none;
+  }
+
+  .adm-capsule-tabs-tab-wrapper {
+    padding: 0 0;
+  }
+
+  .adm-capsule-tabs-tab-active {
+    color: #333333 !important;
+    background: #fff !important;
+  }
+
+  .adm-capsule-tabs-tab {
+    background: none;
+    color: #fff;
+  }
+}
+
+.noBor4 {
+  .adm-scroll-mask-left {
+    background: none;
+  }
+
+  .adm-scroll-mask-right {
+    background: none;
+  }
+
+  .adm-tabs-tab-wrapper-stretch {
+    font-family: Arial;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.58);
+  }
+
+  .adm-tabs-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.23);
+  }
+}
+
+// .noBor5 {
+//     .adm-side-bar {
+//         --width: 78px;
+//         --background-color: 0 !important;
+//     }
+
+//     .adm-side-bar-item {
+//         padding: 0;
+//         width: 78px;
+//         height: 68px;
+//         // background: 0 !important;
+//         background-image: url("../image/game/zx/leftwxz.png");
+//         background-size: 100% 100%;
+
+//         font-size: 12px;
+//         font-family: ArialMT;
+//         color: #333333;
+//     }
+
+//     .adm-side-bar::-webkit-scrollbar {
+//         width: 0px;
+//         height: 0px;
+//     }
+
+//     .adm-side-bar-item-active {
+//         width: 78px;
+//         height: 68px;
+//         background-image: url("../image/game/zx/leftxz.png");
+//         background-size: 100% 100% !important;
+//         font-size: 12px;
+//         font-family: ArialMT;
+//         color: #ffffff !important;
+//         // background-color: #f5f5f5 !important;
+//     }
+//     // 去除游戏菜单栏多余残留
+//     .adm-side-bar-item-corner {
+//         right: 1000000000000000000px;
+//     }
+// }
+.Popovers {
+  .adm-popover-inner {
+    border-radius: 13px;
+  }
+
+  .adm-popover-inner-content {
+    // padding: 3px 6px 3px 8px !important;
+  }
+}
+
+.ylPositionBottom {
+  .adm-popup-body-position-bottom {
+    overflow: visible;
+  }
+}
+
+.rechargeWindow {
+  padding-top: 12px !important;
+
+  .adm-dialog-title {
+    margin-bottom: 25px;
+    line-height: 1;
+  }
+}
+
+.maskClassNames {
+  z-index: 9999999;
+}
+
+.wrapperStyles {
+  .adm-badge-content {
+    padding: 2px 7px;
+    font-size: 12px;
+  }
+}
+
+.betGameZindex {
+  // z-index: 1001;
+}
+
+.recordList {
+  padding: 0 8px;
+
+  .adm-list-body {
+    background-color: unset;
+    font-size: 13px;
+    color: #333;
+    border-bottom: 0;
+  }
+
+  .adm-list-item {
+    padding-left: 0;
+    border-radius: 8px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 8px 0;
+
+    .adm-list-item-content {
+      padding: 0 8px;
+      border-top: 0;
+    }
+  }
+}
+
+.adm-space-item {
+  display: flex;
+  align-items: center;
+}
+
+.zdyTab {
+  .adm-tabs-header {
+    border-bottom: 0;
+  }
+  .adm-tabs-content {
+    padding: 10px 0;
+  }
+  .adm-tabs-tab-list {
+    justify-content: center;
+  }
+
+  .adm-tabs-tab-wrapper-stretch {
+    flex: unset;
+  }
+
+  .adm-tabs-tab-line {
+    display: none;
+  }
+
+  .adm-tabs-tab {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+  }
+
+  .adm-tabs-tab-wrapper {
+    padding: 0 20px;
+  }
+
+  .adm-tabs-tab-active {
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 18px;
+      height: 4px;
+      background-color: #fff;
+      border-radius: 1000px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+    }
+  }
+
+  .adm-card {
+    background: transparent;
+  }
+
+  .adm-card-header {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: calc(100% - 52px);
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: rgba($color: #fff, $alpha: 0.1);
+    }
+  }
+}
+.TabsWbg2 {
+  .adm-tabs-header {
+    border: 0;
+  }
+}
+.noBg {
+  .adm-popup-body {
+    background-color: unset;
+  }
+}
+
+.tmPopover {
+  .adm-popover-inner {
+    background: transparent;
+  }
+
+  .adm-popover-inner-content {
+    padding: 0;
+  }
+
+  .adm-popover-arrow {
+    color: #333;
+  }
+}
+
+.adm-tabs-header-mask {
+  display: none;
+}
+
+#popoverBody {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.adm-modal-image-container {
+  max-height: 100% !important;
+  margin-bottom: 0 !important;
+}
+
+.adm-form .adm-list-body {
+  background-color: transparent !important;
+}
+
+.emptyImg {
+  width: 250px;
+}
+
+.giftTypeList {
+  .adm-tabs-tab {
+    color: rgba($color: #fff, $alpha: 0.35);
+  }
+
+  .adm-tabs-tab-active {
+    color: #fff;
+  }
+
+  .adm-tabs-tab-line {
+    display: none;
+  }
+
+  .adm-tabs-header {
+    border-bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    width: calc(100% - 36px);
+    height: 1px;
+    left: 18px;
+    bottom: 0;
+    display: inline-block;
+    background: rgba($color: #8a8a8a, $alpha: 0.3);
+    position: absolute;
+  }
+}
+
+.yidun_feedback {
+  display: none !important;
+}
+
+.maintain {
+  position: relative;
+
+  .text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 284px;
+    top: 313px;
+    color: #8287f1;
+    font-size: 15px;
+    line-height: 24px;
+    word-break: break-all;
+    max-height: 120px;
+    overflow-y: scroll;
+  }
+}
+
+.dbNum.fixed {
+  color: #fe3a2b;
+}
+
+.iframeNav {
+  position: relative;
+
+  .adm-nav-bar-right {
+    flex: unset;
+  }
+
+  .adm-nav-bar-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.emptyUiBtn {
+  padding: unset;
+  display: block;
+  width: unset;
+  height: unset;
+  line-height: unset;
+  border: 0;
+  background: transparent;
+
+  &::before {
+    content: unset;
+  }
+
+  .adm-button-loading-wrapper {
+    height: unset;
+  }
+}
+
+.adm-nav-bar-title {
+  overflow: unset;
+}
+
+.dplayer-controller-mask {
+  display: none;
+}
+
+.clipImgMask {
+  background: #fff !important;
+  .cropper-bg {
+    background-image: none;
+  }
+}

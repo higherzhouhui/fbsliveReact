@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+  <meta name="referrer" content="never" />
+  <title>DABA</title>
+</head>
+<style>
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #dplayer {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .dplayer-controller-mask,
+  .dplayer-controller,
+  .dplayer-mobile-play,
+  .dplayer-notice-list {
+    display: none !important;
+  }
+
+  video {
+    object-fit: cover;
+  }
+
+  #showIcon {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+  }
+
+  #playIcon img {
+    transform: scale(1);
+    animation: 1s infinite linear shouzhi;
+    margin-bottom: 20px;
+  }
+
+  #playIcon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dplayer-video-wrap {
+    background: transparent !important;
+  }
+
+  @keyframes shouzhi {
+    0% {
+      transform: scale(1.1);
+    }
+
+    50% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1.1);
+    }
+  }
+</style>
+
+<body onclick="playVideo()">
+  <div id="dplayer"></div>
+  <div id="showIcon">
+    <div id="playIcon"></div>
+  </div>
+</body>
+<script src="/DPlayer.min.js"></script>
+<script src="/hls.js"></script>
+<script>
+  function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) {
+      return unescape(r[2]);
+    }
+    return null;
+  }
+  let url = getQueryString("hlsUrl").replace("http:", "").replace("https:", "");
+  let dp = null;
+  dp = new DPlayer({
+    container: document.getElementById("dplayer"),
+    live: true,
+    autoplay: true,
+    preload: "auto",
+    volume: 1,
+    hotkey: false,
+    lang: "en",
+    video: {
+      url: url,
+      type: "customHls",
+      customType: {
+        customHls: function (video, player) {
+          const hls = new Hls();
+          hls.loadSource(url);
+          hls.attachMedia(video);
+        },
+      },
+    },
+  });
+  dp.on("playing", () => {
+    playVideo();
+    dp.volume(1);
+    document.getElementById("dplayer").setAttribute("style", "pointer-events:none");
+  });
+  // dp.on('waiting', () => {
+  //   console.log('-------waiting----------------------资源加载时触发');
+  // })
+  dp.on("canplay", () => {
+    window.parent.postMessage({ type: "canplay" }, "*");
+    dp && dp.paused && dp.play();
+  });
+  dp.on("loadeddata", () => {
+    document.getElementById("showIcon").setAttribute("style", "display:unset");
+  });
+  // dp.on('error', () => {
+  //   console.log('-----------------------------获取视频错误失败------------------------------');
+  // })
+
+  window.addEventListener("message", function (event) {
+    // dp && dp.paused && dp.play();
+  });
+
+  setImg();
+  function setImg() {
+    let img = new Image();
+    img.src = getQueryString("playIcon");
+    document.getElementById("playIcon").append(img);
+    document.getElementById("playIcon").append("Chạm vào bắt đầu live");
+  }
+
+  const playVideo = () => {
+    if (document.getElementById("showIcon")) document.getElementById("showIcon").remove();
+    if (dp && dp.paused) {
+      dp.play();
+    }
+  };
+</script>
+
+</html>

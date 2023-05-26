@@ -1,0 +1,1061 @@
+@import "../../../../assets/style/index.scss";
+
+.betHead {
+  padding: 10px 15px;
+  gap: 10px;
+  width: 100%;
+  align-items: stretch;
+  position: relative;
+
+  background: url("../../../../assets/image/live/lottery/titlebj.png") no-repeat;
+  background-size: 100% 100%;
+
+  .right_div {
+    width: 50%;
+    height: 40px;
+
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    // background: red;
+    // opacity: 0.3;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+
+    .demo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #9b9a9a;
+      line-height: 12px;
+      img {
+        width: 16px;
+        height: 16px;
+        margin: 0;
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: calc(100% - 20px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 1px;
+    background: rgba($color: #fff, $alpha: 0.1);
+  }
+
+  .yellow {
+    color: #f8d302;
+  }
+
+  .top {
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+
+    img {
+      width: 38px;
+      height: 38px;
+      margin-right: 10px;
+      border-radius: 100%;
+    }
+
+    span {
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .nickName {
+      max-width: 80px;
+      word-break: break-all;
+    }
+  }
+
+  .bottom {
+    width: 100%;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+.popup_ld {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 45px;
+  .iframes {
+    width: 100%;
+    height: calc(100vh - 45px);
+  }
+}
+.colors {
+  color: #9b9a9a;
+}
+.colors2 {
+  color: #fff;
+}
+.windowBottom {
+  // background: #fff;
+  color: #fff;
+
+  background: rgba(78, 78, 78, 0.96);
+}
+.windowBottom2 {
+  background: 0;
+  color: #fff;
+}
+.btiFooter {
+  padding: 10px 15px;
+
+  .right {
+    display: flex;
+    // background: #f8f8f8;
+    height: 23px;
+    padding-left: 13px;
+    border-radius: 100px;
+
+    background: #4b4949;
+    box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+    // border-radius: 7.5px;
+    color: #fff;
+
+    .jiantou {
+      width: 14px;
+      height: 14px;
+      margin-left: 8px;
+      transform: rotate(180deg);
+      transition: 0.1s;
+    }
+
+    .trans {
+      transform: rotate(0);
+    }
+  }
+
+  .chargeBtn {
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+  }
+
+  .money {
+    font-size: 13px;
+    font-weight: bold;
+
+    color: #fff;
+
+    @extend .disFlex;
+
+    .iconGold {
+      width: 13px;
+      height: 13px;
+      margin-right: 4px;
+    }
+  }
+
+  .left {
+    .chargeBtn {
+      background: transparent;
+      color: #fff;
+      border-color: #fff;
+      background: transparent;
+      padding: 0 12px;
+      margin-left: 10px;
+      border-radius: 1000px;
+      border-radius: 1000px;
+    }
+  }
+}
+
+.moneySelectBody {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background: #636363;
+  color: #fff;
+
+  .title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .moneyList {
+    display: grid;
+    grid-template-columns: 96px;
+    grid-template-rows: repeat(8, 23px);
+    justify-content: space-between;
+    grid-row-gap: 10px;
+
+    .moneybox {
+      width: 100%;
+      height: 100%;
+      background: #4e4e4e;
+      background-size: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      background-repeat: no-repeat;
+
+      &.active {
+        background: #fff;
+        color: #4e4e4e;
+      }
+    }
+
+    .moneyInput {
+      background: #4e4e4e;
+      border-radius: 1000px;
+      color: #fff;
+      padding: 0 12px;
+      text-align: center;
+    }
+  }
+}
+
+.btiBtn {
+  margin-left: 9px;
+  height: 23px;
+  // border-radius: 100px;
+  line-height: 23px;
+  // background: $main;
+  // background: linear-gradient(128deg, #eb9bff 0%, #e067ff 37%, #5e29e0 100%);
+  background: #ffffff;
+
+  border: 0;
+  // color: #fff;
+  color: #333;
+  padding: 0 13px;
+
+  border-radius: 15px;
+}
+
+.checkBtiForm {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 0 15px;
+  padding-bottom: 20px;
+
+  border-radius: 10px 10px 0 0;
+
+  .title {
+    text-align: center;
+
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 17px 0 12px;
+  }
+
+  .info {
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  .overBti {
+    max-height: 40vh;
+    overflow: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .box {
+      background: url("../../../../assets/image/live/lottery/tzbej.png") no-repeat;
+      background-size: 100% 100%;
+
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      padding: 10px;
+      grid-row-gap: 12px;
+      justify-content: space-between;
+      border-radius: 10px;
+      height: 64px;
+
+      .closeImg {
+        @extend .disFlex;
+        justify-content: flex-end;
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+  .big {
+    font-size: 16px;
+  }
+  .big2 {
+    font-size: 12px;
+  }
+
+  .red {
+    color: #ffffff;
+  }
+
+  .lit {
+    font-size: 12px;
+  }
+
+  > .disFlexb {
+    padding: 5px 0;
+  }
+}
+
+.btiPer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+
+  &.outSetBtiPer {
+    margin: 10px 15px 0;
+  }
+
+  .box {
+    // border: 1px solid #5e29e0;
+    background: url("../../../../assets/image/live/lottery/bjwxz.png") no-repeat;
+    background-size: 100% 100%;
+    // border-radius: 8px;
+    color: #fff;
+  }
+
+  .active {
+    // background: #5e29e0;
+    background: url("../../../../assets/image/live/lottery/bjxz.png") no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+
+    font-size: 14px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #333333;
+  }
+}
+
+.setSelfMoney {
+  width: 320px;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto;
+
+  .input {
+    background: rgba($color: #fff, $alpha: 0.2);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 1000px;
+    padding: 0 12px;
+    color: #fff;
+
+    input {
+      color: #fff;
+    }
+  }
+
+  .setSub {
+    height: 40px;
+    margin: 0 15px;
+    background: $main;
+    border-radius: 1000px;
+    border: 0;
+    color: #fff;
+  }
+}
+
+.floorBody {
+  position: fixed;
+  left: -270px;
+  top: 38vh;
+  z-index: 999;
+}
+
+.floorWindow {
+  background: rgba($color: #000000, $alpha: 0.5);
+  padding: 0 10px;
+  width: 270px;
+  border-radius: 8px;
+  transform: translateX(270px);
+  transition: 3s linear;
+  margin: 15px 0;
+
+  .title {
+    line-height: 25px;
+    position: relative;
+    // border-bottom: 1px solid #eee;
+    font-size: 10px;
+
+    .close {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .content {
+    padding-top: 10px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+  }
+
+  &.ani {
+    transform: translateX(270px);
+  }
+
+  &.hideAni {
+    transform: translateX(-270px) !important;
+  }
+}
+
+.floorWindow1 {
+  // background: url("../../../../assets/image/live/tbj1.png");
+
+  background-size: 100% 100%;
+  min-width: 150px;
+  min-height: 60px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  transform: translateX(280px);
+  transition: 3s linear;
+  margin: 15px 0;
+  position: relative;
+
+  .title {
+    min-width: 150px;
+    border-radius: 6px 6px 0 0;
+    line-height: 25px;
+    position: relative;
+    // border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 20px;
+    background: rgba(0, 0, 0, 0.4);
+
+    padding: 0 5.5px;
+
+    .title_nickName {
+      font-size: 10px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: #ffffff;
+
+      margin-right: 10px;
+    }
+
+    .title_expect {
+      font-size: 9px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: #ffffff;
+    }
+  }
+
+  .close {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .content {
+    padding-top: 5.5px;
+    height: 34px;
+    padding-left: 5.5px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+  }
+
+  &.ani {
+    transform: translateX(280px);
+  }
+
+  &.hideAni {
+    transform: translateX(-104px) !important;
+  }
+}
+
+.floorWindow2 {
+  // background: url("../../../../assets/image/live/tbj2.png");
+  background-size: 100% 100%;
+  padding: 0 10px;
+  width: 139px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+
+  // border-radius: 8px;
+  transform: translateX(280px);
+  transition: 3s linear;
+  margin: 15px 0;
+  position: relative;
+
+  .title {
+    line-height: 25px;
+    position: relative;
+    // border-bottom: 1px solid #eee;
+    text-align: center !important;
+
+    .title_nickName {
+      font-size: 14px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      color: #7d4b00;
+    }
+
+    .title_expect {
+      font-size: 10px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      color: #7d4b00;
+    }
+
+    .title_nickName2 {
+      font-size: 14px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      color: #800514;
+    }
+
+    .title_expect2 {
+      font-size: 10px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      color: #800514;
+    }
+  }
+
+  .close {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .content {
+    padding-top: 10px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+  }
+
+  &.ani {
+    transform: translateX(280px);
+  }
+
+  &.hideAni {
+    transform: translateX(-104px) !important;
+  }
+}
+
+.redCard {
+  // background: #5e29e0;
+  // color: #fff;
+  // display: inline-block;
+  // width: 16px;
+  // line-height: 16px;
+  // height: 16px;
+  // text-align: center;
+  // border-radius: 4px;
+  // font-size: 12px;
+
+  display: inline-block;
+  // width: 20px;
+  // text-align: center;
+  // border-radius: 4px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // 23px
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  font-style: normal;
+
+  color: #333;
+}
+.redCard2 {
+  @extend .redCard;
+  background: #ff9090 !important;
+  color: #fff;
+}
+.greenCard {
+  @extend .redCard;
+  background: #6cbb77 !important;
+  color: #fff;
+}
+
+.blueCard {
+  @extend .redCard;
+  background: #8479fb !important;
+  color: #fff;
+}
+
+.tbg {
+  background: rgba($color: #000000, $alpha: 0.7);
+}
+
+// 提示弹窗
+.tipsPopUp {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 10px 10px 0 0;
+
+  padding: 18px 0 23px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  font-size: 15px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #fff;
+
+  background: rgba(78, 78, 78, 0.96);
+
+  .tipsPopUp_title {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .displ {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .displ_but {
+    padding: 0 12px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 8px;
+  }
+  .marginTop {
+    margin-top: 12px;
+
+    margin-bottom: 8px;
+  }
+
+  .margins {
+    width: 100%;
+    padding: 0 15px;
+    // margin-top: 19px;
+    margin-bottom: 24px;
+  }
+
+  .borderBut {
+    width: 100%;
+
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    background: rgba(255, 255, 255, 0.1);
+
+    border-radius: 4px;
+  }
+
+  .information {
+    line-height: 20px;
+  }
+
+  .displ2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottoms {
+    margin-bottom: 20px;
+    padding-bottom: 19px;
+
+    width: 100%;
+    // border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #c2c2c2;
+  }
+
+  .Tcmoney {
+    margin: 8px 0 16px 0;
+    font-size: 20px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #ff839b;
+  }
+
+  .Tcmoney_color {
+    color: #b4aebe;
+  }
+
+  .border_position {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+    width: 1px;
+    height: 43px;
+    background-color: #c2c2c2;
+  }
+
+  .but {
+    min-width: 107px;
+    height: 30px;
+    // text-align: center;
+    // line-height: 30px;
+    padding: 0 10px;
+
+    border-radius: 15px;
+
+    font-size: 14px;
+    font-family: Helvetica;
+    color: #ffffff;
+
+    background: none;
+
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+  }
+
+  .but2 {
+    background: #ffffff;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-family: Helvetica;
+    color: #333333;
+  }
+
+  .butBackgrun {
+    // background: linear-gradient(90deg, #9163ef, #d862e6);
+    background: #ff839b;
+    border-radius: 15px;
+    border: none;
+    // border-image: linear-gradient(90deg, #a87dfc, #e77ef9);
+
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+  }
+}
+// 提示弹窗
+.tipsPopUp2 {
+  padding: 18px 0 23px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  font-size: 15px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333;
+
+  // background: rgba(78, 78, 78, 0.96);
+  background: #fff;
+
+  .tipsPopUp_title {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333;
+  }
+
+  .displ {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .displ_but {
+    padding: 0 12px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 8px;
+  }
+  .marginTop {
+    margin-top: 12px;
+
+    margin-bottom: 8px;
+  }
+
+  .margins {
+    width: 100%;
+    padding: 0 15px;
+    // margin-top: 19px;
+    margin-bottom: 24px;
+  }
+
+  .borderBut {
+    width: 100%;
+
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    background: rgba(255, 255, 255, 0.1);
+
+    border-radius: 4px;
+  }
+
+  .information {
+    line-height: 20px;
+  }
+
+  .displ2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottoms {
+    margin-bottom: 20px;
+    padding-bottom: 19px;
+
+    width: 100%;
+    // border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #c2c2c2;
+  }
+
+  .Tcmoney {
+    margin: 8px 0 16px 0;
+    font-size: 20px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #ff839b;
+  }
+
+  .Tcmoney_color {
+    color: #b4aebe;
+  }
+
+  .border_position {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+    width: 1px;
+    height: 43px;
+    background-color: #c2c2c2;
+  }
+
+  .but {
+    min-width: 107px;
+    height: 30px;
+    // text-align: center;
+    // line-height: 30px;
+    padding: 0 10px;
+
+    border-radius: 15px;
+
+    font-size: 14px;
+    font-family: Helvetica;
+    color: #333;
+
+    background: none;
+
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+  }
+
+  .but2 {
+    background: #ffffff;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-family: Helvetica;
+    color: #333333;
+  }
+
+  .butBackgrun {
+    // background: linear-gradient(90deg, #9163ef, #d862e6);
+    background: #ff839b;
+    border-radius: 15px;
+    border: none;
+    // border-image: linear-gradient(90deg, #a87dfc, #e77ef9);
+
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+  }
+}
+
+.RemindPopUps {
+  background: url("../../../../assets/image/live/whtclog.png") no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100vw - 30px);
+  min-height: 410px;
+  max-height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  .RemindPopUps_title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+  }
+
+  .RemindPopUps_center {
+    padding: 35px 25px 25px;
+    font-size: 13.5px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 18px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .RemindPopUps_magrin {
+    margin-bottom: 9.5px;
+    max-height: 370px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .RemindPopUps_magrin2 {
+    margin-bottom: 7px;
+  }
+}
+
+.LotteryNumIcon {
+  width: 32px;
+  height: 32px;
+  background: url(../../../../assets/image/live/lottery/gz.png) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.LotteryNumIcon1 {
+  @extend .LotteryNumIcon;
+  background: url(../../../../assets/image/live/lottery/gr.png) no-repeat;
+  background-size: 100% 100%;
+}
+.freshYnOpen {
+  animation: trans 1s infinite;
+}
+
+@keyframes trans {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.MaskWindowBottom {
+  background: red;
+  width: 100vw;
+  height: 100vh;
+}

@@ -1,0 +1,504 @@
+.lucky_bag {
+    // position: absolute;
+    // left: 10px;
+    // top: 10px;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, .4);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fd {
+        width: 32px;
+        height: 36px;
+        background: url('../../../../assets/images/live/lucky_bag/fd-icon.png') no-repeat;
+        background-size: 32px 36px;
+    }
+
+    .time {
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        font-size: 12px;
+        line-height: 14px;
+        border-radius: 0px 0px 4px 4px;
+        background: rgba(0, 0, 0, .3);
+    }
+}
+
+.lucky_box {
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    z-index: 10;
+    border-radius: 8px;
+    padding: 3px;
+    background: linear-gradient(180deg, #C6382F 0%, #FF5726 100%);
+
+    .lucky_box_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 8px;
+        padding: 24px 0 0 8px;
+        box-sizing: border-box;
+        width: 184px;
+        border: 1px solid #d57a5b;
+
+        .title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #FFFFFF;
+            line-height: 16px;
+            margin-bottom: 12px;
+        }
+
+        .tips,
+        .look {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.4);
+            line-height: 12px;
+            margin-bottom: 14px;
+        }
+
+        .look {
+            margin-bottom: 8px;
+
+            img {
+                height: 12px;
+                margin-left: 4px;
+            }
+        }
+
+        .statusImg {
+            height: 93px;
+            margin-bottom: 23px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .list {
+            width: 100%;
+            margin: 25px 0 30px;
+            height: 176px;
+            overflow: auto;
+
+            .item {
+                font-size: 12px;
+                font-weight: 400;
+                color: #999999;
+                line-height: 12px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .avatar {
+                    width: 23px;
+                    height: 23px;
+                    border-radius: 50%;
+                    background-color: #f5910e;
+                    margin-right: 5px;
+                }
+
+                .gold {
+                    margin-left: auto;
+                }
+            }
+        }
+
+    }
+}
+
+.fd-modal {
+    border-radius: 10px;
+    background-color: transparent;
+    right: 0;
+    padding: 0 !important;
+    padding: 0 !important;
+
+    .ant-modal-content {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: url('../../../../assets/images/live/lucky_bag/bg.png') no-repeat;
+        background-size: 420px 462px;
+        padding-bottom: 25px !important;
+        width: 420px;
+        height: 462px;
+    }
+
+    .ant-modal-content .ant-modal-body {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 74px;
+        height: 102px;
+        background: url('../../../../assets/images/live/lucky_bag/fd-title-bg.png') no-repeat;
+        background-size: 74px 102px;
+        z-index: 1;
+        top: 0;
+        right: 0;
+    }
+
+    .header {
+        background: linear-gradient(180deg, rgba(165, 72, 241, 0.2) 0%, rgba(165, 72, 241, 0) 100%);
+        padding: 26px 0px 0 0px;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        margin: 0 11px;
+
+        &_t {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            z-index: 2;
+            position: relative;
+
+            .icon-help {
+                position: absolute;
+                left: 15px;
+                cursor: pointer;
+            }
+
+            .icon-close {
+                position: absolute;
+                right: 0;
+                top: -26px;
+                right: -11px;
+                cursor: pointer;
+            }
+
+            img {
+                width: 16px;
+                height: 16px;
+                display: block;
+                z-index: 1;
+                cursor: pointer;
+            }
+
+            .title {
+                width: 100%;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 500;
+                color: #fff;
+                line-height: 16px;
+            }
+        }
+
+        &_b {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.25);
+            line-height: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    .body {
+        padding: 16px 22px 12px 22px;
+        box-sizing: border-box;
+
+        &_box {
+            width: 100%;
+            height: 101px;
+            background: url('../../../../assets/images/live/lucky_bag/fd-box.png') no-repeat;
+            background-size: 100% 101px;
+            z-index: 2;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 10px;
+
+            &_l,
+            &_r {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            &_l {
+                span {
+                    text-align: center;
+
+                    &:first-child {
+                        font-size: 28px;
+                        font-family: DINCondensed-Bold, DINCondensed;
+                        font-weight: bold;
+                        color: #fff;
+                        line-height: 28px;
+                        margin-bottom: 16px;
+                    }
+
+                    &:last-child {
+                        line-height: 12px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &_r {
+                span {
+                    text-align: center;
+
+                    &:first-child {
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #333;
+                        line-height: 20px;
+                        margin-bottom: 20px;
+                    }
+
+                    &:last-child {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #333;
+                        line-height: 12px;
+                    }
+                }
+            }
+        }
+
+        .content {
+            margin-top: 12px;
+            background: #4E4F57;
+            padding: 16px 10px;
+            height: 88px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: rgba(255, 255, 255, 0.88);
+            font-size: 14px;
+            margin-bottom: 70px;
+            border-radius: 4px;
+
+            .condition {
+                font-weight: 500;
+                line-height: 16px;
+                display: flex;
+                justify-content: space-between;
+
+                .comment_status {
+                    text-align: right;
+                    width: 30%;
+                    color: #FF93E5;
+                }
+            }
+
+            .comment {
+                font-weight: 400;
+                line-height: 14px;
+
+                &_text {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 100%;
+                }
+
+
+            }
+        }
+
+
+        .tips {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 400;
+            color: #CCCCCC;
+            line-height: 12px;
+        }
+    }
+
+    .rules {
+        height: 397px;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.88);
+        line-height: 20px;
+        padding: 10px 20px 20px 25px;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+
+}
+
+.fd-modal-overlayContent {
+    border-radius: 10px;
+    background-color: transparent;
+    right: 0;
+    padding: 0 !important;
+    padding: 0 !important;
+
+    .ant-modal-content {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: url('../../../../assets/images/live/lucky_bag/bg2.png') no-repeat;
+        background-size: 280px 312px;
+        padding-bottom: 25px !important;
+        width: 280px;
+        height: 312px;
+    }
+
+    .ant-modal-content .ant-modal-body {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+
+}
+
+.overlayContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+    .icon-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .unset {
+        padding-top: 45px;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        line-height: 16px;
+        z-index: 1;
+        width: 80%;
+        margin: 0 auto 12px;
+    }
+
+    .tips,
+    .look {
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba($color: #fff, $alpha: 0.4);
+        line-height: 12px;
+        z-index: 1;
+    }
+
+    .look {
+        color: #FFD13A;
+        margin-bottom: 30px;
+        cursor: pointer;
+
+        img {
+            height: 12px;
+            margin-left: 4px;
+        }
+    }
+
+    .statusImg {
+        height: 98px;
+        margin: 40px auto 35px;
+
+        img {
+            height: 93px;
+            object-fit: contain;
+        }
+    }
+
+    .list {
+        margin-top: 18px;
+        // padding: 5px 38px;
+        height: 170px;
+        overflow: auto;
+        margin: 18px 18px 0 18px;
+        padding: 0 20px;
+        z-index: 1;
+
+        .item {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba($color: #fff, $alpha: 0.4);
+            line-height: 12px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .avatar {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: #f5910e;
+                margin-right: 5px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 100%;
+                }
+            }
+
+            .name {
+                color: #999999;
+                margin: 0;
+            }
+
+            .gold {
+                margin-left: auto;
+                color: rgba($color: #fff, $alpha: 0.4);
+            }
+        }
+    }
+}
+
+.ant-modal-footer {
+    .btn_submit {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 14px;
+        padding: 15px 0;
+        border-radius: 5px;
+        height: 46px !important;
+        line-height: 46px !important;
+        border-radius: 4px !important;
+        background: #FC708B;
+    }
+}
